@@ -21,6 +21,7 @@ namespace SCAC.Pages
         {
             pgLogin login = new pgLogin();
             login.Show();
+       
         }
     }
 }

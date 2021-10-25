@@ -41,42 +41,44 @@ namespace SCAC
             // labLogin
             // 
             labLogin.CausesValidation = false;
-            labLogin.Location = new System.Drawing.Point(305, 148);
+            labLogin.Location = new System.Drawing.Point(59, 52);
             labLogin.MinimumSize = new System.Drawing.Size(150, 15);
             labLogin.Name = "labLogin";
-            labLogin.Size = new System.Drawing.Size(150, 20);
+            labLogin.Size = new System.Drawing.Size(150, 30);
             labLogin.TabIndex = 0;
-            labLogin.Text = "Login";
+            labLogin.Text = "LOGIN";
             labLogin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // btnLogar
             // 
-            this.btnLogar.Location = new System.Drawing.Point(358, 332);
+            this.btnLogar.Location = new System.Drawing.Point(110, 193);
             this.btnLogar.Name = "btnLogar";
-            this.btnLogar.Size = new System.Drawing.Size(75, 23);
+            this.btnLogar.Size = new System.Drawing.Size(75, 29);
             this.btnLogar.TabIndex = 1;
             this.btnLogar.Text = "Entrar";
             this.btnLogar.UseVisualStyleBackColor = true;
+            this.btnLogar.Click += new System.EventHandler(this.btnLogar_Click);
             // 
             // labSenha
             // 
             this.labSenha.AutoSize = true;
-            this.labSenha.Location = new System.Drawing.Point(305, 227);
+            this.labSenha.Location = new System.Drawing.Point(59, 126);
             this.labSenha.Name = "labSenha";
-            this.labSenha.Size = new System.Drawing.Size(38, 13);
+            this.labSenha.Size = new System.Drawing.Size(44, 13);
             this.labSenha.TabIndex = 2;
-            this.labSenha.Text = "Senha";
+            this.labSenha.Text = "SENHA";
+            this.labSenha.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // txbLogin
             // 
-            this.txbLogin.Location = new System.Drawing.Point(308, 171);
+            this.txbLogin.Location = new System.Drawing.Point(62, 85);
             this.txbLogin.Name = "txbLogin";
             this.txbLogin.Size = new System.Drawing.Size(178, 20);
             this.txbLogin.TabIndex = 3;
             // 
             // txbSenha
             // 
-            this.txbSenha.Location = new System.Drawing.Point(308, 243);
+            this.txbSenha.Location = new System.Drawing.Point(62, 142);
             this.txbSenha.Name = "txbSenha";
             this.txbSenha.Size = new System.Drawing.Size(178, 20);
             this.txbSenha.TabIndex = 5;
@@ -84,20 +86,20 @@ namespace SCAC
             // lklCadastro
             // 
             this.lklCadastro.AutoSize = true;
-            this.lklCadastro.Location = new System.Drawing.Point(355, 370);
+            this.lklCadastro.Location = new System.Drawing.Point(118, 234);
             this.lklCadastro.Name = "lklCadastro";
             this.lklCadastro.Size = new System.Drawing.Size(67, 13);
             this.lklCadastro.TabIndex = 6;
             this.lklCadastro.TabStop = true;
             this.lklCadastro.Text = "Se cadastrar";
-            this.lklCadastro.MouseClick += new System.Windows.Forms.MouseEventHandler(this.lklCadastro_MouseClick);
+            this.lklCadastro.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lklCadastro_LinkClicked);
             // 
             // pgLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(291, 273);
             this.Controls.Add(this.lklCadastro);
             this.Controls.Add(this.txbSenha);
             this.Controls.Add(this.txbLogin);
@@ -105,6 +107,7 @@ namespace SCAC
             this.Controls.Add(this.btnLogar);
             this.Controls.Add(labLogin);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "pgLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
