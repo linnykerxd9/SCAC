@@ -18,7 +18,7 @@ namespace SCAC
         public pgLogin()
         {
             InitializeComponent();
-             autenticado = false;
+            autenticado = false;
         }
 
         private void lklCadastro_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -30,8 +30,35 @@ namespace SCAC
 
         private void btnLogar_Click(object sender, EventArgs e)
         {
-            this.Close();
-            this.autenticado = true;
+            string email = this.txbLogin.Text.ToLower();
+            string senha = this.txbSenha.Text.ToLower();
+
+            this.autenticado = login(email, senha);
+
+            if (this.autenticado)
+            {
+                MessageBox.Show("LOGIN EFETUADO COM SUCESSO",
+                                "Sucesso",
+                                System.Windows.Forms.MessageBoxButtons.OK);
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("LOGIN OU SENHA INCORRETOS",
+                                "Error",
+                                System.Windows.Forms.MessageBoxButtons.OK,
+                                System.Windows.Forms.MessageBoxIcon.Warning);
+            }
+        }
+
+        private bool login(string email, string senha)
+        {
+
+            if(email != "admin" || senha != "admin")
+            {
+                return false;
+            }
+            return true;
         }
     }
 }
