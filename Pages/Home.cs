@@ -20,7 +20,23 @@ namespace SCAC.Pages
         private void pgHome_Shown(object sender, EventArgs e)
         {
             pgLogin login = new pgLogin();
+            login.WindowState = FormWindowState.Normal;
             login.Show();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void dADASDASToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

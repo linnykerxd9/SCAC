@@ -13,17 +13,52 @@ namespace SCAC
 {
     public partial class pgLogin : Form
     {
+        public bool autenticado { get; private set; }
+
         public pgLogin()
         {
             InitializeComponent();
+            autenticado = false;
         }
 
-
-        private void lklCadastro_MouseClick(object sender, MouseEventArgs e)
+        private void lklCadastro_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Close();
             pgCadastro cadastro = new pgCadastro();
             cadastro.Show();
+        }
+
+        private void btnLogar_Click(object sender, EventArgs e)
+        {
+            string email = this.txbLogin.Text.ToLower();
+            string senha = this.txbSenha.Text.ToLower();
+
+            this.autenticado = login(email, senha);
+
+            if (this.autenticado)
+            {
+                MessageBox.Show("LOGIN EFETUADO COM SUCESSO",
+                                "Sucesso",
+                                System.Windows.Forms.MessageBoxButtons.OK);
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("LOGIN OU SENHA INCORRETOS",
+                                "Error",
+                                System.Windows.Forms.MessageBoxButtons.OK,
+                                System.Windows.Forms.MessageBoxIcon.Warning);
+            }
+        }
+
+        private bool login(string email, string senha)
+        {
+
+            if(email != "admin" || senha != "admin")
+            {
+                return false;
+            }
+            return true;
         }
     }
 }
