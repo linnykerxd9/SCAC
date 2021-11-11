@@ -38,5 +38,10 @@ namespace SCAC.Pages
         {
 
         }
+
+        private void lblHome_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
