@@ -47,39 +47,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Pages\Cadastro.cs">
+    <Compile Include="Src\Pages\Cadastro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Pages\Cadastro.Designer.cs">
+    <Compile Include="Src\Pages\Cadastro.Designer.cs">
       <DependentUpon>Cadastro.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Home.cs">
+    <Compile Include="Src\Pages\Home.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Pages\Home.Designer.cs">
+    <Compile Include="Src\Pages\Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Login.cs">
+    <Compile Include="Src\Pages\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Pages\Login.Designer.cs">
+    <Compile Include="Src\Pages\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\UserControl1.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Pages\UserControl1.Designer.cs">
-      <DependentUpon>UserControl1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Pages\Cadastro.resx">
+    <EmbeddedResource Include="Src\Pages\Cadastro.resx">
       <DependentUpon>Cadastro.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pages\Home.resx">
+    <EmbeddedResource Include="Src\Pages\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pages\Login.resx">
+    <EmbeddedResource Include="Src\Pages\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -90,6 +84,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -105,7 +100,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Classes\" />
+    <Folder Include="Src\Classes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Src\Image\LogoSample_ByTailorBrands.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Src\Image\LogoSample.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -36,7 +36,7 @@ namespace SCAC.Pages
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(326, 50);
+            this.label1.Location = new System.Drawing.Point(348, 29);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(49, 13);
             this.label1.TabIndex = 0;
@@ -45,7 +45,7 @@ namespace SCAC.Pages
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(251, 205);
+            this.linkLabel1.Location = new System.Drawing.Point(211, 182);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(55, 13);
             this.linkLabel1.TabIndex = 1;
@@ -57,6 +57,8 @@ namespace SCAC.Pages
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::SCAC.Properties.Resources.LogoSample;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label1);

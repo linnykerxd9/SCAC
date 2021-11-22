@@ -24,24 +24,9 @@ namespace SCAC.Pages
             login.Show();
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void TsmiCriarRein_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
-
-        private void dADASDASToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblHome_Click(object sender, EventArgs e)
-        {
-
+            this.PnCriaRein.Visible = !this.PnCriaRein.Visible;
         }
     }
 }
