@@ -215,6 +215,7 @@ namespace SCAC.Pages
             this.PnCriaRein.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.PnCriaRein.BackColor = System.Drawing.Color.Transparent;
             this.PnCriaRein.Controls.Add(this.Teste);
             this.PnCriaRein.Location = new System.Drawing.Point(158, 57);
             this.PnCriaRein.Name = "PnCriaRein";
