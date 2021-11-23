@@ -16,13 +16,5 @@ namespace SCAC.Pages
         {
             InitializeComponent();
         }
-
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            this.Close();
-            pgLogin login = new pgLogin();
-            login.Show();
-        }
-
     }
 }

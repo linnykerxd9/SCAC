@@ -17,10 +17,12 @@ namespace SCAC.Pages
             InitializeComponent();
         }
 
-        private void pgHome_Shown(object sender, EventArgs e)
+        private void PgHome_Shown(object sender, EventArgs e)
         {
-            pgLogin login = new pgLogin();
-            login.WindowState = FormWindowState.Normal;
+            pgLogin login = new pgLogin
+            {
+                WindowState = FormWindowState.Normal
+            };
             login.Show();
         }
 
@@ -28,5 +30,6 @@ namespace SCAC.Pages
         {
             this.PnCriaRein.Visible = !this.PnCriaRein.Visible;
         }
+
     }
 }

@@ -23,9 +23,21 @@ namespace SCAC
 
         private void lklCadastro_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            string message = "Um novo lider foi eleito? esta ação desabilitara o lider anterior,Deseja continuar?";
+            if (DialogResult.Yes == MessageBox.Show( message,
+                                                     "Confirmação",
+                                                     MessageBoxButtons.YesNo,
+                                                     MessageBoxIcon.Question,
+                                                     MessageBoxDefaultButton.Button2))
+            {
+               
             this.Close();
-            pgCadastro cadastro = new pgCadastro();
+            pgCadastro cadastro = new pgCadastro
+            {
+                WindowState = FormWindowState.Normal
+            };
             cadastro.Show();
+            }
         }
 
         private void btnLogar_Click(object sender, EventArgs e)

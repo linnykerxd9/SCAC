@@ -261,7 +261,7 @@ namespace SCAC.Pages
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SCAC";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Shown += new System.EventHandler(this.pgHome_Shown);
+            this.Shown += new System.EventHandler(this.PgHome_Shown);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.MnsMenu.ResumeLayout(false);
