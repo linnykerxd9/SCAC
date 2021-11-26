@@ -30,9 +30,9 @@ namespace SCAC.Pages
         private void TsmiRegiReinvindication_Click(object sender, EventArgs e)
         {
             Panel ResizePanel = this.PnlCreateRein;
-            ResizePanel.Width = 1193;
+            ResizePanel.Width = 1357;
             ResizePanel.Height = 1650;
-            ResizePanel.Location = new Point(144,77);
+            ResizePanel.Location = new Point(0,77);
 
             ChangeHeight(1700);
             this.PnlCreateRein.Visible = !this.PnlCreateRein.Visible;

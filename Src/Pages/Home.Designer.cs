@@ -114,14 +114,13 @@ namespace SCAC.Pages
             // panel1
             // 
             this.panel1.Controls.Add(this.MnsMenu);
-            this.panel1.Location = new System.Drawing.Point(3, 77);
+            this.panel1.Location = new System.Drawing.Point(0, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(140, 368);
+            this.panel1.Size = new System.Drawing.Size(1354, 38);
             this.panel1.TabIndex = 1;
             // 
             // MnsMenu
             // 
-            this.MnsMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.MnsMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TsmReinvindication,
             this.TsmEvent,
@@ -130,7 +129,7 @@ namespace SCAC.Pages
             this.TsmLeader});
             this.MnsMenu.Location = new System.Drawing.Point(0, 0);
             this.MnsMenu.Name = "MnsMenu";
-            this.MnsMenu.Size = new System.Drawing.Size(138, 368);
+            this.MnsMenu.Size = new System.Drawing.Size(1354, 24);
             this.MnsMenu.TabIndex = 0;
             this.MnsMenu.Text = "menuStrip1";
             // 
@@ -140,7 +139,7 @@ namespace SCAC.Pages
             this.TsmiRegiReinvindication,
             this.TsmiListReinvindication});
             this.TsmReinvindication.Name = "TsmReinvindication";
-            this.TsmReinvindication.Size = new System.Drawing.Size(125, 19);
+            this.TsmReinvindication.Size = new System.Drawing.Size(106, 20);
             this.TsmReinvindication.Text = "REIVINDICAÇÃO";
             // 
             // TsmiRegiReinvindication
@@ -162,19 +161,19 @@ namespace SCAC.Pages
             this.TsmiRegiEvent,
             this.TsmiListEvent});
             this.TsmEvent.Name = "TsmEvent";
-            this.TsmEvent.Size = new System.Drawing.Size(125, 19);
+            this.TsmEvent.Size = new System.Drawing.Size(61, 20);
             this.TsmEvent.Text = "EVENTO";
             // 
             // TsmiRegiEvent
             // 
             this.TsmiRegiEvent.Name = "TsmiRegiEvent";
-            this.TsmiRegiEvent.Size = new System.Drawing.Size(146, 22);
+            this.TsmiRegiEvent.Size = new System.Drawing.Size(180, 22);
             this.TsmiRegiEvent.Text = "Criar Evento";
             // 
             // TsmiListEvent
             // 
             this.TsmiListEvent.Name = "TsmiListEvent";
-            this.TsmiListEvent.Size = new System.Drawing.Size(146, 22);
+            this.TsmiListEvent.Size = new System.Drawing.Size(180, 22);
             this.TsmiListEvent.Text = "Listar Eventos";
             // 
             // TsmPublicAgency
@@ -183,7 +182,7 @@ namespace SCAC.Pages
             this.TsmiRegiPublicAgency,
             this.TsmiListPublicAgency});
             this.TsmPublicAgency.Name = "TsmPublicAgency";
-            this.TsmPublicAgency.Size = new System.Drawing.Size(125, 19);
+            this.TsmPublicAgency.Size = new System.Drawing.Size(111, 20);
             this.TsmPublicAgency.Text = "ORGÃO PÚBLICO";
             // 
             // TsmiRegiPublicAgency
@@ -204,7 +203,7 @@ namespace SCAC.Pages
             this.TsmiRegiResident,
             this.TsmiListResident});
             this.TsmResident.Name = "TsmResident";
-            this.TsmResident.Size = new System.Drawing.Size(125, 19);
+            this.TsmResident.Size = new System.Drawing.Size(78, 20);
             this.TsmResident.Text = "MORADOR";
             // 
             // TsmiRegiResident
@@ -224,13 +223,13 @@ namespace SCAC.Pages
             this.TsmLeader.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TsmiListLeader});
             this.TsmLeader.Name = "TsmLeader";
-            this.TsmLeader.Size = new System.Drawing.Size(125, 19);
+            this.TsmLeader.Size = new System.Drawing.Size(132, 20);
             this.TsmLeader.Text = "LÍDER COMUNITARIO";
             // 
             // TsmiListLeader
             // 
             this.TsmiListLeader.Name = "TsmiListLeader";
-            this.TsmiListLeader.Size = new System.Drawing.Size(142, 22);
+            this.TsmiListLeader.Size = new System.Drawing.Size(180, 22);
             this.TsmiListLeader.Text = "Listar Líderes";
             // 
             // dASDSDAToolStripMenuItem
@@ -292,9 +291,9 @@ namespace SCAC.Pages
             this.PnlCreateRein.Controls.Add(this.LblOpenDate);
             this.PnlCreateRein.Controls.Add(this.LblResident);
             this.PnlCreateRein.Controls.Add(this.LblTitle);
-            this.PnlCreateRein.Location = new System.Drawing.Point(144, 77);
+            this.PnlCreateRein.Location = new System.Drawing.Point(3, 89);
             this.PnlCreateRein.Name = "PnlCreateRein";
-            this.PnlCreateRein.Size = new System.Drawing.Size(150, 150);
+            this.PnlCreateRein.Size = new System.Drawing.Size(1339, 65);
             this.PnlCreateRein.TabIndex = 3;
             this.PnlCreateRein.Visible = false;
             // 
@@ -623,7 +622,7 @@ namespace SCAC.Pages
             // 
             this.LblWarning4.Location = new System.Drawing.Point(0, 154);
             this.LblWarning4.Name = "LblWarning4";
-            this.LblWarning4.Size = new System.Drawing.Size(1226, 23);
+            this.LblWarning4.Size = new System.Drawing.Size(1354, 23);
             this.LblWarning4.TabIndex = 13;
             this.LblWarning4.Text = "• Exemplo : O morador que poderão ser fixados a essa reinvindicação, são apenas m" +
     "oradores já cadastrados";
@@ -634,7 +633,7 @@ namespace SCAC.Pages
             this.LblWarning3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblWarning3.Location = new System.Drawing.Point(0, 126);
             this.LblWarning3.Name = "LblWarning3";
-            this.LblWarning3.Size = new System.Drawing.Size(1226, 20);
+            this.LblWarning3.Size = new System.Drawing.Size(1354, 20);
             this.LblWarning3.TabIndex = 12;
             this.LblWarning3.Text = "• São apenas para campos já cadastrados";
             this.LblWarning3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -644,7 +643,7 @@ namespace SCAC.Pages
             this.LblWarning2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblWarning2.Location = new System.Drawing.Point(0, 97);
             this.LblWarning2.Name = "LblWarning2";
-            this.LblWarning2.Size = new System.Drawing.Size(1226, 20);
+            this.LblWarning2.Size = new System.Drawing.Size(1357, 20);
             this.LblWarning2.TabIndex = 11;
             this.LblWarning2.Text = "• Os campos morador, lider,  status, orgão publico e prioridade ";
             this.LblWarning2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -655,7 +654,7 @@ namespace SCAC.Pages
             this.LblWarning1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.LblWarning1.Location = new System.Drawing.Point(0, 65);
             this.LblWarning1.Name = "LblWarning1";
-            this.LblWarning1.Size = new System.Drawing.Size(1226, 20);
+            this.LblWarning1.Size = new System.Drawing.Size(1357, 20);
             this.LblWarning1.TabIndex = 10;
             this.LblWarning1.Text = "• Aviso importante";
             this.LblWarning1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -699,7 +698,7 @@ namespace SCAC.Pages
             this.LblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblTitle.Location = new System.Drawing.Point(0, 15);
             this.LblTitle.Name = "LblTitle";
-            this.LblTitle.Size = new System.Drawing.Size(1226, 23);
+            this.LblTitle.Size = new System.Drawing.Size(1354, 23);
             this.LblTitle.TabIndex = 1;
             this.LblTitle.Text = "Cadastrar reinvindicação";
             this.LblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -711,9 +710,9 @@ namespace SCAC.Pages
             this.lblHome.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblHome.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.lblHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHome.Location = new System.Drawing.Point(0, 9);
+            this.lblHome.Location = new System.Drawing.Point(-3, 40);
             this.lblHome.Name = "lblHome";
-            this.lblHome.Size = new System.Drawing.Size(1340, 18);
+            this.lblHome.Size = new System.Drawing.Size(1342, 18);
             this.lblHome.TabIndex = 0;
             this.lblHome.Text = "SCAC - SISTEMA DE CONTROLE DE AÇÕES COMUNITÁRIAS";
             this.lblHome.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -727,7 +726,7 @@ namespace SCAC.Pages
             this.Container.Controls.Add(this.PnlCreateRein);
             this.Container.Location = new System.Drawing.Point(1, 1);
             this.Container.Name = "Container";
-            this.Container.Size = new System.Drawing.Size(1340, 743);
+            this.Container.Size = new System.Drawing.Size(1342, 743);
             this.Container.TabIndex = 1;
             // 
             // pgHome
