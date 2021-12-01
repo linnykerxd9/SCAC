@@ -18,6 +18,10 @@ namespace SCAC.Src.Classes
         public int idStatus { get; set; }
         public int idOrgPublic { get; set; }
         public int idPriority { get; set; }
-
+        public LiderComunitario communityLeader { get; set; }
+        public Morador Resident { get; set; }
+        public Status Status { get; set; }
+        public OrgPublico OrgPublic { get; set; }
+        public Prioridade Priority { get; set; }
     }
 }
