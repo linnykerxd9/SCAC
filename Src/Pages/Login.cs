@@ -1,10 +1,13 @@
-﻿using SCAC.Pages;
+﻿using Microsoft.AspNetCore.WebUtilities;
+using SCAC.Pages;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -13,12 +16,9 @@ namespace SCAC
 {
     public partial class pgLogin : Form
     {
-        public bool autenticado { get; private set; }
-
         public pgLogin()
         {
             InitializeComponent();
-            autenticado = false;
         }
 
         private void lklCadastro_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -40,14 +40,15 @@ namespace SCAC
             }
         }
 
-        private void btnLogar_Click(object sender, EventArgs e)
+        async private void btnLogar_Click(object sender, EventArgs e)
         {
-            string email = this.txbLogin.Text.ToLower();
-            string senha = this.txbSenha.Text.ToLower();
 
-            this.autenticado = login(email, senha);
+            string email = this.txbLogin.Text;
+            string senha = this.txbSenha.Text;
 
-            if (this.autenticado)
+            var autenticado = await Login(email, senha);
+
+            if (autenticado.StatusCode == HttpStatusCode.OK)
             {
                 MessageBox.Show("LOGIN EFETUADO COM SUCESSO",
                                 "Sucesso",
@@ -63,14 +64,21 @@ namespace SCAC
             }
         }
 
-        private bool login(string email, string senha)
+        async private Task<HttpResponseMessage> Login(string login, string password)
         {
 
-            if(email != "admin" || senha != "admin")
+            var query = new Dictionary<string, string>();
+            query.Add("login", login);
+            query.Add("password", password);
+
+            using (var cliente = new HttpClient())
             {
-                return false;
+                const string url = "https://api-scac.azurewebsites.net/api/v1/leader/login";
+
+                var newUrl = new Uri(QueryHelpers.AddQueryString(url, query));
+                var request = await cliente.GetAsync(newUrl);
+                return request;
             }
-            return true;
         }
     }
 }

@@ -35,11 +35,11 @@ namespace SCAC.Pages
             this.lblCpf = new System.Windows.Forms.Label();
             this.LblPassword = new System.Windows.Forms.Label();
             this.LblLogin = new System.Windows.Forms.Label();
-            this.ItbFullName = new System.Windows.Forms.MaskedTextBox();
-            this.ItbRg = new System.Windows.Forms.MaskedTextBox();
-            this.ItbCpf = new System.Windows.Forms.MaskedTextBox();
-            this.ItbLogin = new System.Windows.Forms.MaskedTextBox();
-            this.ItbPassword = new System.Windows.Forms.MaskedTextBox();
+            this.TxbFullName = new System.Windows.Forms.MaskedTextBox();
+            this.TxbRg = new System.Windows.Forms.MaskedTextBox();
+            this.TxbCpf = new System.Windows.Forms.MaskedTextBox();
+            this.TxbLogin = new System.Windows.Forms.MaskedTextBox();
+            this.TxbPassword = new System.Windows.Forms.MaskedTextBox();
             this.BtnRegistration = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -57,7 +57,7 @@ namespace SCAC.Pages
             // 
             this.LblFullName.AutoSize = true;
             this.LblFullName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblFullName.Location = new System.Drawing.Point(67, 102);
+            this.LblFullName.Location = new System.Drawing.Point(131, 96);
             this.LblFullName.Name = "LblFullName";
             this.LblFullName.Size = new System.Drawing.Size(124, 20);
             this.LblFullName.TabIndex = 1;
@@ -66,8 +66,9 @@ namespace SCAC.Pages
             // LblRg
             // 
             this.LblRg.AutoSize = true;
+            this.LblRg.BackColor = System.Drawing.Color.Transparent;
             this.LblRg.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblRg.Location = new System.Drawing.Point(67, 185);
+            this.LblRg.Location = new System.Drawing.Point(131, 179);
             this.LblRg.Name = "LblRg";
             this.LblRg.Size = new System.Drawing.Size(120, 20);
             this.LblRg.TabIndex = 2;
@@ -76,8 +77,9 @@ namespace SCAC.Pages
             // lblCpf
             // 
             this.lblCpf.AutoSize = true;
+            this.lblCpf.BackColor = System.Drawing.Color.Transparent;
             this.lblCpf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCpf.Location = new System.Drawing.Point(65, 266);
+            this.lblCpf.Location = new System.Drawing.Point(129, 260);
             this.lblCpf.Name = "lblCpf";
             this.lblCpf.Size = new System.Drawing.Size(126, 20);
             this.lblCpf.TabIndex = 3;
@@ -87,7 +89,7 @@ namespace SCAC.Pages
             // 
             this.LblPassword.AutoSize = true;
             this.LblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblPassword.Location = new System.Drawing.Point(67, 413);
+            this.LblPassword.Location = new System.Drawing.Point(131, 407);
             this.LblPassword.Name = "LblPassword";
             this.LblPassword.Size = new System.Drawing.Size(60, 20);
             this.LblPassword.TabIndex = 4;
@@ -96,50 +98,55 @@ namespace SCAC.Pages
             // LblLogin
             // 
             this.LblLogin.AutoSize = true;
+            this.LblLogin.BackColor = System.Drawing.SystemColors.Control;
             this.LblLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblLogin.Location = new System.Drawing.Point(67, 336);
+            this.LblLogin.Location = new System.Drawing.Point(131, 330);
             this.LblLogin.Name = "LblLogin";
             this.LblLogin.Size = new System.Drawing.Size(52, 20);
             this.LblLogin.TabIndex = 5;
             this.LblLogin.Text = "Login:";
             // 
-            // ItbFullName
+            // TxbFullName
             // 
-            this.ItbFullName.Location = new System.Drawing.Point(95, 136);
-            this.ItbFullName.Name = "ItbFullName";
-            this.ItbFullName.Size = new System.Drawing.Size(172, 20);
-            this.ItbFullName.TabIndex = 6;
+            this.TxbFullName.Location = new System.Drawing.Point(159, 130);
+            this.TxbFullName.Name = "TxbFullName";
+            this.TxbFullName.Size = new System.Drawing.Size(172, 20);
+            this.TxbFullName.TabIndex = 6;
             // 
-            // ItbRg
+            // TxbRg
             // 
-            this.ItbRg.Location = new System.Drawing.Point(95, 230);
-            this.ItbRg.Mask = "0.000.000";
-            this.ItbRg.Name = "ItbRg";
-            this.ItbRg.Size = new System.Drawing.Size(172, 20);
-            this.ItbRg.TabIndex = 7;
+            this.TxbRg.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.TxbRg.Location = new System.Drawing.Point(159, 224);
+            this.TxbRg.Mask = "0.000.000";
+            this.TxbRg.Name = "TxbRg";
+            this.TxbRg.Size = new System.Drawing.Size(172, 20);
+            this.TxbRg.TabIndex = 7;
+            this.TxbRg.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
-            // ItbCpf
+            // TxbCpf
             // 
-            this.ItbCpf.Location = new System.Drawing.Point(95, 300);
-            this.ItbCpf.Mask = "000.000.000-00";
-            this.ItbCpf.Name = "ItbCpf";
-            this.ItbCpf.Size = new System.Drawing.Size(172, 20);
-            this.ItbCpf.TabIndex = 8;
+            this.TxbCpf.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.TxbCpf.Location = new System.Drawing.Point(159, 294);
+            this.TxbCpf.Mask = "000.000.000-00";
+            this.TxbCpf.Name = "TxbCpf";
+            this.TxbCpf.Size = new System.Drawing.Size(172, 20);
+            this.TxbCpf.TabIndex = 8;
+            this.TxbCpf.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
-            // ItbLogin
+            // TxbLogin
             // 
-            this.ItbLogin.Location = new System.Drawing.Point(95, 372);
-            this.ItbLogin.Name = "ItbLogin";
-            this.ItbLogin.Size = new System.Drawing.Size(172, 20);
-            this.ItbLogin.TabIndex = 9;
+            this.TxbLogin.Location = new System.Drawing.Point(159, 366);
+            this.TxbLogin.Name = "TxbLogin";
+            this.TxbLogin.Size = new System.Drawing.Size(172, 20);
+            this.TxbLogin.TabIndex = 9;
             // 
-            // ItbPassword
+            // TxbPassword
             // 
-            this.ItbPassword.Location = new System.Drawing.Point(95, 453);
-            this.ItbPassword.Name = "ItbPassword";
-            this.ItbPassword.PasswordChar = '*';
-            this.ItbPassword.Size = new System.Drawing.Size(172, 20);
-            this.ItbPassword.TabIndex = 10;
+            this.TxbPassword.Location = new System.Drawing.Point(159, 447);
+            this.TxbPassword.Name = "TxbPassword";
+            this.TxbPassword.PasswordChar = '*';
+            this.TxbPassword.Size = new System.Drawing.Size(172, 20);
+            this.TxbPassword.TabIndex = 10;
             // 
             // BtnRegistration
             // 
@@ -150,6 +157,7 @@ namespace SCAC.Pages
             this.BtnRegistration.TabIndex = 11;
             this.BtnRegistration.Text = "Cadastrar";
             this.BtnRegistration.UseVisualStyleBackColor = true;
+            this.BtnRegistration.Click += new System.EventHandler(this.BtnRegistration_Click);
             // 
             // pgCadastro
             // 
@@ -159,11 +167,11 @@ namespace SCAC.Pages
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(503, 544);
             this.Controls.Add(this.BtnRegistration);
-            this.Controls.Add(this.ItbPassword);
-            this.Controls.Add(this.ItbLogin);
-            this.Controls.Add(this.ItbCpf);
-            this.Controls.Add(this.ItbRg);
-            this.Controls.Add(this.ItbFullName);
+            this.Controls.Add(this.TxbPassword);
+            this.Controls.Add(this.TxbLogin);
+            this.Controls.Add(this.TxbCpf);
+            this.Controls.Add(this.TxbRg);
+            this.Controls.Add(this.TxbFullName);
             this.Controls.Add(this.LblLogin);
             this.Controls.Add(this.LblPassword);
             this.Controls.Add(this.lblCpf);
@@ -189,11 +197,11 @@ namespace SCAC.Pages
         private System.Windows.Forms.Label lblCpf;
         private System.Windows.Forms.Label LblPassword;
         private System.Windows.Forms.Label LblLogin;
-        private System.Windows.Forms.MaskedTextBox ItbFullName;
-        private System.Windows.Forms.MaskedTextBox ItbRg;
-        private System.Windows.Forms.MaskedTextBox ItbCpf;
-        private System.Windows.Forms.MaskedTextBox ItbLogin;
-        private System.Windows.Forms.MaskedTextBox ItbPassword;
+        private System.Windows.Forms.MaskedTextBox TxbFullName;
+        private System.Windows.Forms.MaskedTextBox TxbRg;
+        private System.Windows.Forms.MaskedTextBox TxbCpf;
+        private System.Windows.Forms.MaskedTextBox TxbLogin;
+        private System.Windows.Forms.MaskedTextBox TxbPassword;
         private System.Windows.Forms.Button BtnRegistration;
     }
 }
