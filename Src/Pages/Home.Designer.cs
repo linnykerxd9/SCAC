@@ -35,15 +35,21 @@ namespace SCAC.Pages
             this.TsmReinvindication = new System.Windows.Forms.ToolStripMenuItem();
             this.TsmiRegiReinvindication = new System.Windows.Forms.ToolStripMenuItem();
             this.TsmiListReinvindication = new System.Windows.Forms.ToolStripMenuItem();
+            this.TsmResident = new System.Windows.Forms.ToolStripMenuItem();
+            this.TsmiRegiResident = new System.Windows.Forms.ToolStripMenuItem();
+            this.TsmiListResident = new System.Windows.Forms.ToolStripMenuItem();
             this.TsmEvent = new System.Windows.Forms.ToolStripMenuItem();
             this.TsmiRegiEvent = new System.Windows.Forms.ToolStripMenuItem();
             this.TsmiListEvent = new System.Windows.Forms.ToolStripMenuItem();
             this.TsmPublicAgency = new System.Windows.Forms.ToolStripMenuItem();
             this.TsmiRegiPublicAgency = new System.Windows.Forms.ToolStripMenuItem();
             this.TsmiListPublicAgency = new System.Windows.Forms.ToolStripMenuItem();
-            this.TsmResident = new System.Windows.Forms.ToolStripMenuItem();
-            this.TsmiRegiResident = new System.Windows.Forms.ToolStripMenuItem();
-            this.TsmiListResident = new System.Windows.Forms.ToolStripMenuItem();
+            this.sTATUSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadastrarStatusToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listarStatusToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.prioridadeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadastrarPrioridadeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listarPrioridadesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.TsmLeader = new System.Windows.Forms.ToolStripMenuItem();
             this.TsmiListLeader = new System.Windows.Forms.ToolStripMenuItem();
             this.dASDSDAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -52,7 +58,56 @@ namespace SCAC.Pages
             this.aSDAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aSDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Container = new System.Windows.Forms.Panel();
+            this.PnlListStatus = new System.Windows.Forms.Panel();
+            this.BtnDeleteStatus = new System.Windows.Forms.Button();
+            this.BtnDPutStatus = new System.Windows.Forms.Button();
+            this.BtnVisuStatus = new System.Windows.Forms.Button();
+            this.LtvListStatus = new System.Windows.Forms.ListView();
+            this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader13 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.PnlListPriority = new System.Windows.Forms.Panel();
+            this.BtnDeletePriority = new System.Windows.Forms.Button();
+            this.BtnPutPriority = new System.Windows.Forms.Button();
+            this.BtnVisuPriority = new System.Windows.Forms.Button();
+            this.LtvListPriority = new System.Windows.Forms.ListView();
+            this.columnHeader17 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader18 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.LblTittleListPriority = new System.Windows.Forms.Label();
+            this.PnlListOrgPub = new System.Windows.Forms.Panel();
+            this.LtvListOrgPub = new System.Windows.Forms.ListView();
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.BtnDeleteOrgPub = new System.Windows.Forms.Button();
+            this.BtnPutOrgPub = new System.Windows.Forms.Button();
+            this.BtnVisuOrgPub = new System.Windows.Forms.Button();
+            this.LblTitleListOrgPub = new System.Windows.Forms.Label();
+            this.PnlListEvent = new System.Windows.Forms.Panel();
+            this.BtnDeleteEvent = new System.Windows.Forms.Button();
+            this.BtnPutEvent = new System.Windows.Forms.Button();
+            this.BtnVisuEvent = new System.Windows.Forms.Button();
+            this.LtvListEvent = new System.Windows.Forms.ListView();
+            this.IdColumnListEvent = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.NameColumnListEvent = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.DateColumnListEvent = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.HourColumnListEvent = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.DescriptionColumnListEvent = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.StatusColumnListEvent = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.LblTittleListEvent = new System.Windows.Forms.Label();
+            this.PnlListLeader = new System.Windows.Forms.Panel();
+            this.LtvListLeader = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.LblTittleListLeader = new System.Windows.Forms.Label();
             this.PnlListResident = new System.Windows.Forms.Panel();
+            this.BtnDeleteListResi = new System.Windows.Forms.Button();
+            this.BtnPutListResi = new System.Windows.Forms.Button();
             this.BtnVisuListResi = new System.Windows.Forms.Button();
             this.LtvListResident = new System.Windows.Forms.ListView();
             this.IdColumnListResi = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -141,75 +196,75 @@ namespace SCAC.Pages
             this.LblOpenDate = new System.Windows.Forms.Label();
             this.LblResident = new System.Windows.Forms.Label();
             this.LblTitleCadRein = new System.Windows.Forms.Label();
-            this.BtnPutListResi = new System.Windows.Forms.Button();
-            this.BtnDeleteListResi = new System.Windows.Forms.Button();
-            this.PnlListLeader = new System.Windows.Forms.Panel();
-            this.LblTittleListLeader = new System.Windows.Forms.Label();
-            this.LtvListLeader = new System.Windows.Forms.ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.PnlListEvent = new System.Windows.Forms.Panel();
-            this.LblTittleListEvent = new System.Windows.Forms.Label();
-            this.LtvListEvent = new System.Windows.Forms.ListView();
-            this.IdColumnListEvent = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.NameColumnListEvent = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.BtnVisuEvent = new System.Windows.Forms.Button();
-            this.BtnPutEvent = new System.Windows.Forms.Button();
-            this.BtnDeleteEvent = new System.Windows.Forms.Button();
-            this.PnlListOrgPub = new System.Windows.Forms.Panel();
-            this.BtnDeleteOrgPub = new System.Windows.Forms.Button();
-            this.BtnPutOrgPub = new System.Windows.Forms.Button();
-            this.BtnVisuOrgPub = new System.Windows.Forms.Button();
-            this.LblTitleListOrgPub = new System.Windows.Forms.Label();
-            this.LtvListOrgPub = new System.Windows.Forms.ListView();
-            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.cadastrarPrioridadeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.listarPrioridadesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.prioridadeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sTATUSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cadastrarStatusToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.listarStatusToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.PnlListPriority = new System.Windows.Forms.Panel();
-            this.BtnDeletePriority = new System.Windows.Forms.Button();
-            this.BtnPutPriority = new System.Windows.Forms.Button();
-            this.BtnVisuPriority = new System.Windows.Forms.Button();
-            this.LtvListPriority = new System.Windows.Forms.ListView();
-            this.columnHeader17 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader18 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.LblTittleListPriority = new System.Windows.Forms.Label();
-            this.PnlListStatus = new System.Windows.Forms.Panel();
-            this.BtnDeleteStatus = new System.Windows.Forms.Button();
-            this.BtnDPutStatus = new System.Windows.Forms.Button();
-            this.BtnVisuStatus = new System.Windows.Forms.Button();
-            this.LtvListStatus = new System.Windows.Forms.ListView();
-            this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader13 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.DateColumnListEvent = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.HourColumnListEvent = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.DescriptionColumnListEvent = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.StatusColumnListEvent = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.PnlCreateEvent = new System.Windows.Forms.Panel();
+            this.LblTittleCreateEvent = new System.Windows.Forms.Label();
+            this.LblResponsableCreateEvent = new System.Windows.Forms.Label();
+            this.LblDateCreateEvent = new System.Windows.Forms.Label();
+            this.LblHourCreateEvent = new System.Windows.Forms.Label();
+            this.LblDescriptionCreateEvent = new System.Windows.Forms.Label();
+            this.LblStatusCreateEvent = new System.Windows.Forms.Label();
+            this.TxbResponsableCreateEvent = new System.Windows.Forms.MaskedTextBox();
+            this.CldDateCreateEvent = new System.Windows.Forms.MonthCalendar();
+            this.TxbHourCreateEvent = new System.Windows.Forms.MaskedTextBox();
+            this.TxbDescriptionCreateEvent = new System.Windows.Forms.MaskedTextBox();
+            this.CmbStatusCreateEvent = new System.Windows.Forms.ComboBox();
+            this.BtnSaveCreateEvent = new System.Windows.Forms.Button();
+            this.PnlCreateResident = new System.Windows.Forms.Panel();
+            this.LbltTitleCreateResident = new System.Windows.Forms.Label();
+            this.LblRgCreateResident = new System.Windows.Forms.Label();
+            this.LblFullNameCreateResident = new System.Windows.Forms.Label();
+            this.LblCpfCreateResident = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.LblTelephoneCreateResident = new System.Windows.Forms.Label();
+            this.LblSexCreateResident = new System.Windows.Forms.Label();
+            this.LblAddressCreateResident = new System.Windows.Forms.Label();
+            this.LblDistrictCreateResident = new System.Windows.Forms.Label();
+            this.LblNumberCreateResident = new System.Windows.Forms.Label();
+            this.LblCityCreateResident = new System.Windows.Forms.Label();
+            this.LblUfCreateResident = new System.Windows.Forms.Label();
+            this.LblCepCreateResident = new System.Windows.Forms.Label();
+            this.LblComplementCreateResident = new System.Windows.Forms.Label();
+            this.TxbFullNameCreateResident = new System.Windows.Forms.MaskedTextBox();
+            this.TxbRgCreateResident = new System.Windows.Forms.MaskedTextBox();
+            this.TxbCpfCreateResident = new System.Windows.Forms.MaskedTextBox();
+            this.CldBirthdayCreateResident = new System.Windows.Forms.MonthCalendar();
+            this.TxbTelephoneCreateResident = new System.Windows.Forms.MaskedTextBox();
+            this.TxbAddressCreateResident = new System.Windows.Forms.MaskedTextBox();
+            this.TxbDistrictCreateResident = new System.Windows.Forms.MaskedTextBox();
+            this.TxbCepCreateResident = new System.Windows.Forms.MaskedTextBox();
+            this.TxbNumberCreateResident = new System.Windows.Forms.MaskedTextBox();
+            this.TxbCityCreateResident = new System.Windows.Forms.MaskedTextBox();
+            this.TxbUfCreateResident = new System.Windows.Forms.MaskedTextBox();
+            this.TxbComplementCreateResident = new System.Windows.Forms.MaskedTextBox();
+            this.BtnSaveCreateResident = new System.Windows.Forms.Button();
+            this.CmbSexCreateResident = new System.Windows.Forms.ComboBox();
             LblTittleListStatus = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.MnsMenu.SuspendLayout();
             this.Container.SuspendLayout();
+            this.PnlListStatus.SuspendLayout();
+            this.PnlListPriority.SuspendLayout();
+            this.PnlListOrgPub.SuspendLayout();
+            this.PnlListEvent.SuspendLayout();
+            this.PnlListLeader.SuspendLayout();
             this.PnlListResident.SuspendLayout();
             this.PnlLisRein.SuspendLayout();
             this.PnlCreateRein.SuspendLayout();
             this.PnlDateConclusionCreateRein.SuspendLayout();
-            this.PnlListLeader.SuspendLayout();
-            this.PnlListEvent.SuspendLayout();
-            this.PnlListOrgPub.SuspendLayout();
-            this.PnlListPriority.SuspendLayout();
-            this.PnlListStatus.SuspendLayout();
+            this.PnlCreateEvent.SuspendLayout();
+            this.PnlCreateResident.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // LblTittleListStatus
+            // 
+            LblTittleListStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            LblTittleListStatus.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            LblTittleListStatus.Location = new System.Drawing.Point(-8, 37);
+            LblTittleListStatus.Name = "LblTittleListStatus";
+            LblTittleListStatus.Size = new System.Drawing.Size(1336, 36);
+            LblTittleListStatus.TabIndex = 36;
+            LblTittleListStatus.Text = "Listar Status";
+            LblTittleListStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel1
             // 
@@ -258,6 +313,29 @@ namespace SCAC.Pages
             this.TsmiListReinvindication.Text = "Listar Reivindicações";
             this.TsmiListReinvindication.Click += new System.EventHandler(this.TsmiListReinvindication_Click);
             // 
+            // TsmResident
+            // 
+            this.TsmResident.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TsmiRegiResident,
+            this.TsmiListResident});
+            this.TsmResident.Name = "TsmResident";
+            this.TsmResident.Size = new System.Drawing.Size(78, 20);
+            this.TsmResident.Text = "MORADOR";
+            // 
+            // TsmiRegiResident
+            // 
+            this.TsmiRegiResident.Name = "TsmiRegiResident";
+            this.TsmiRegiResident.Size = new System.Drawing.Size(186, 22);
+            this.TsmiRegiResident.Text = "Cadastro de Morador";
+            this.TsmiRegiResident.Click += new System.EventHandler(this.TsmiRegiResident_Click);
+            // 
+            // TsmiListResident
+            // 
+            this.TsmiListResident.Name = "TsmiListResident";
+            this.TsmiListResident.Size = new System.Drawing.Size(186, 22);
+            this.TsmiListResident.Text = "Listar Moradores";
+            this.TsmiListResident.Click += new System.EventHandler(this.TsmiListResident_Click);
+            // 
             // TsmEvent
             // 
             this.TsmEvent.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -272,6 +350,7 @@ namespace SCAC.Pages
             this.TsmiRegiEvent.Name = "TsmiRegiEvent";
             this.TsmiRegiEvent.Size = new System.Drawing.Size(180, 22);
             this.TsmiRegiEvent.Text = "Criar Evento";
+            this.TsmiRegiEvent.Click += new System.EventHandler(this.TsmiRegiEvent_Click);
             // 
             // TsmiListEvent
             // 
@@ -292,37 +371,59 @@ namespace SCAC.Pages
             // TsmiRegiPublicAgency
             // 
             this.TsmiRegiPublicAgency.Name = "TsmiRegiPublicAgency";
-            this.TsmiRegiPublicAgency.Size = new System.Drawing.Size(180, 22);
+            this.TsmiRegiPublicAgency.Size = new System.Drawing.Size(160, 22);
             this.TsmiRegiPublicAgency.Text = "Cadastrar Orgão";
             // 
             // TsmiListPublicAgency
             // 
             this.TsmiListPublicAgency.Name = "TsmiListPublicAgency";
-            this.TsmiListPublicAgency.Size = new System.Drawing.Size(180, 22);
+            this.TsmiListPublicAgency.Size = new System.Drawing.Size(160, 22);
             this.TsmiListPublicAgency.Text = "Listar Orgãos";
             this.TsmiListPublicAgency.Click += new System.EventHandler(this.TsmiListPublicAgency_Click);
             // 
-            // TsmResident
+            // sTATUSToolStripMenuItem
             // 
-            this.TsmResident.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.TsmiRegiResident,
-            this.TsmiListResident});
-            this.TsmResident.Name = "TsmResident";
-            this.TsmResident.Size = new System.Drawing.Size(78, 20);
-            this.TsmResident.Text = "MORADOR";
+            this.sTATUSToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cadastrarStatusToolStripMenuItem,
+            this.listarStatusToolStripMenuItem});
+            this.sTATUSToolStripMenuItem.Name = "sTATUSToolStripMenuItem";
+            this.sTATUSToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
+            this.sTATUSToolStripMenuItem.Text = "STATUS";
             // 
-            // TsmiRegiResident
+            // cadastrarStatusToolStripMenuItem
             // 
-            this.TsmiRegiResident.Name = "TsmiRegiResident";
-            this.TsmiRegiResident.Size = new System.Drawing.Size(186, 22);
-            this.TsmiRegiResident.Text = "Cadastro de Morador";
+            this.cadastrarStatusToolStripMenuItem.Name = "cadastrarStatusToolStripMenuItem";
+            this.cadastrarStatusToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.cadastrarStatusToolStripMenuItem.Text = "Cadastrar status";
             // 
-            // TsmiListResident
+            // listarStatusToolStripMenuItem
             // 
-            this.TsmiListResident.Name = "TsmiListResident";
-            this.TsmiListResident.Size = new System.Drawing.Size(186, 22);
-            this.TsmiListResident.Text = "Listar Moradores";
-            this.TsmiListResident.Click += new System.EventHandler(this.TsmiListResident_Click);
+            this.listarStatusToolStripMenuItem.Name = "listarStatusToolStripMenuItem";
+            this.listarStatusToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.listarStatusToolStripMenuItem.Text = "Listar status";
+            this.listarStatusToolStripMenuItem.Click += new System.EventHandler(this.listarStatusToolStripMenuItem_Click);
+            // 
+            // prioridadeToolStripMenuItem
+            // 
+            this.prioridadeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cadastrarPrioridadeToolStripMenuItem,
+            this.listarPrioridadesToolStripMenuItem});
+            this.prioridadeToolStripMenuItem.Name = "prioridadeToolStripMenuItem";
+            this.prioridadeToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
+            this.prioridadeToolStripMenuItem.Text = "PRIORIDADE";
+            // 
+            // cadastrarPrioridadeToolStripMenuItem
+            // 
+            this.cadastrarPrioridadeToolStripMenuItem.Name = "cadastrarPrioridadeToolStripMenuItem";
+            this.cadastrarPrioridadeToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
+            this.cadastrarPrioridadeToolStripMenuItem.Text = "Cadastrar prioridade";
+            // 
+            // listarPrioridadesToolStripMenuItem
+            // 
+            this.listarPrioridadesToolStripMenuItem.Name = "listarPrioridadesToolStripMenuItem";
+            this.listarPrioridadesToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
+            this.listarPrioridadesToolStripMenuItem.Text = "Listar Prioridades";
+            this.listarPrioridadesToolStripMenuItem.Click += new System.EventHandler(this.listarPrioridadesToolStripMenuItem_Click);
             // 
             // TsmLeader
             // 
@@ -335,7 +436,7 @@ namespace SCAC.Pages
             // TsmiListLeader
             // 
             this.TsmiListLeader.Name = "TsmiListLeader";
-            this.TsmiListLeader.Size = new System.Drawing.Size(180, 22);
+            this.TsmiListLeader.Size = new System.Drawing.Size(142, 22);
             this.TsmiListLeader.Text = "Listar Líderes";
             this.TsmiListLeader.Click += new System.EventHandler(this.TsmiListLeader_Click);
             // 
@@ -373,6 +474,8 @@ namespace SCAC.Pages
             // 
             this.Container.BackColor = System.Drawing.Color.Transparent;
             this.Container.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.Container.Controls.Add(this.PnlCreateResident);
+            this.Container.Controls.Add(this.PnlCreateEvent);
             this.Container.Controls.Add(this.PnlListStatus);
             this.Container.Controls.Add(this.PnlListPriority);
             this.Container.Controls.Add(this.PnlListOrgPub);
@@ -387,6 +490,407 @@ namespace SCAC.Pages
             this.Container.Size = new System.Drawing.Size(1343, 735);
             this.Container.TabIndex = 1;
             // 
+            // PnlListStatus
+            // 
+            this.PnlListStatus.Controls.Add(this.BtnDeleteStatus);
+            this.PnlListStatus.Controls.Add(this.BtnDPutStatus);
+            this.PnlListStatus.Controls.Add(this.BtnVisuStatus);
+            this.PnlListStatus.Controls.Add(this.LtvListStatus);
+            this.PnlListStatus.Controls.Add(LblTittleListStatus);
+            this.PnlListStatus.Location = new System.Drawing.Point(4, 692);
+            this.PnlListStatus.Name = "PnlListStatus";
+            this.PnlListStatus.Size = new System.Drawing.Size(1336, 96);
+            this.PnlListStatus.TabIndex = 44;
+            this.PnlListStatus.Visible = false;
+            // 
+            // BtnDeleteStatus
+            // 
+            this.BtnDeleteStatus.Location = new System.Drawing.Point(772, 361);
+            this.BtnDeleteStatus.Name = "BtnDeleteStatus";
+            this.BtnDeleteStatus.Size = new System.Drawing.Size(86, 37);
+            this.BtnDeleteStatus.TabIndex = 43;
+            this.BtnDeleteStatus.Text = "DELETAR";
+            this.BtnDeleteStatus.UseVisualStyleBackColor = true;
+            this.BtnDeleteStatus.Click += new System.EventHandler(this.BtnDeleteStatus_Click);
+            // 
+            // BtnDPutStatus
+            // 
+            this.BtnDPutStatus.Location = new System.Drawing.Point(630, 361);
+            this.BtnDPutStatus.Name = "BtnDPutStatus";
+            this.BtnDPutStatus.Size = new System.Drawing.Size(90, 38);
+            this.BtnDPutStatus.TabIndex = 42;
+            this.BtnDPutStatus.Text = "ATUALIZAR";
+            this.BtnDPutStatus.UseVisualStyleBackColor = true;
+            // 
+            // BtnVisuStatus
+            // 
+            this.BtnVisuStatus.Location = new System.Drawing.Point(491, 361);
+            this.BtnVisuStatus.Name = "BtnVisuStatus";
+            this.BtnVisuStatus.Size = new System.Drawing.Size(97, 37);
+            this.BtnVisuStatus.TabIndex = 38;
+            this.BtnVisuStatus.Text = "VISUALIZAR";
+            this.BtnVisuStatus.UseVisualStyleBackColor = true;
+            // 
+            // LtvListStatus
+            // 
+            this.LtvListStatus.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader12,
+            this.columnHeader13});
+            this.LtvListStatus.FullRowSelect = true;
+            this.LtvListStatus.HideSelection = false;
+            this.LtvListStatus.Location = new System.Drawing.Point(475, 161);
+            this.LtvListStatus.MultiSelect = false;
+            this.LtvListStatus.Name = "LtvListStatus";
+            this.LtvListStatus.Size = new System.Drawing.Size(402, 158);
+            this.LtvListStatus.TabIndex = 37;
+            this.LtvListStatus.UseCompatibleStateImageBehavior = false;
+            this.LtvListStatus.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader12
+            // 
+            this.columnHeader12.Text = "Id";
+            // 
+            // columnHeader13
+            // 
+            this.columnHeader13.Text = "Descrição";
+            this.columnHeader13.Width = 330;
+            // 
+            // PnlListPriority
+            // 
+            this.PnlListPriority.Controls.Add(this.BtnDeletePriority);
+            this.PnlListPriority.Controls.Add(this.BtnPutPriority);
+            this.PnlListPriority.Controls.Add(this.BtnVisuPriority);
+            this.PnlListPriority.Controls.Add(this.LtvListPriority);
+            this.PnlListPriority.Controls.Add(this.LblTittleListPriority);
+            this.PnlListPriority.Location = new System.Drawing.Point(5, 817);
+            this.PnlListPriority.Name = "PnlListPriority";
+            this.PnlListPriority.Size = new System.Drawing.Size(1336, 127);
+            this.PnlListPriority.TabIndex = 44;
+            this.PnlListPriority.Visible = false;
+            // 
+            // BtnDeletePriority
+            // 
+            this.BtnDeletePriority.Location = new System.Drawing.Point(772, 361);
+            this.BtnDeletePriority.Name = "BtnDeletePriority";
+            this.BtnDeletePriority.Size = new System.Drawing.Size(86, 37);
+            this.BtnDeletePriority.TabIndex = 43;
+            this.BtnDeletePriority.Text = "DELETAR";
+            this.BtnDeletePriority.UseVisualStyleBackColor = true;
+            this.BtnDeletePriority.Click += new System.EventHandler(this.BtnDeletePriority_Click);
+            // 
+            // BtnPutPriority
+            // 
+            this.BtnPutPriority.Location = new System.Drawing.Point(630, 361);
+            this.BtnPutPriority.Name = "BtnPutPriority";
+            this.BtnPutPriority.Size = new System.Drawing.Size(90, 38);
+            this.BtnPutPriority.TabIndex = 42;
+            this.BtnPutPriority.Text = "ATUALIZAR";
+            this.BtnPutPriority.UseVisualStyleBackColor = true;
+            // 
+            // BtnVisuPriority
+            // 
+            this.BtnVisuPriority.Location = new System.Drawing.Point(491, 361);
+            this.BtnVisuPriority.Name = "BtnVisuPriority";
+            this.BtnVisuPriority.Size = new System.Drawing.Size(97, 37);
+            this.BtnVisuPriority.TabIndex = 38;
+            this.BtnVisuPriority.Text = "VISUALIZAR";
+            this.BtnVisuPriority.UseVisualStyleBackColor = true;
+            // 
+            // LtvListPriority
+            // 
+            this.LtvListPriority.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader17,
+            this.columnHeader18});
+            this.LtvListPriority.FullRowSelect = true;
+            this.LtvListPriority.HideSelection = false;
+            this.LtvListPriority.Location = new System.Drawing.Point(475, 161);
+            this.LtvListPriority.MultiSelect = false;
+            this.LtvListPriority.Name = "LtvListPriority";
+            this.LtvListPriority.Size = new System.Drawing.Size(402, 158);
+            this.LtvListPriority.TabIndex = 37;
+            this.LtvListPriority.UseCompatibleStateImageBehavior = false;
+            this.LtvListPriority.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader17
+            // 
+            this.columnHeader17.Text = "Id";
+            // 
+            // columnHeader18
+            // 
+            this.columnHeader18.Text = "Descrição";
+            this.columnHeader18.Width = 330;
+            // 
+            // LblTittleListPriority
+            // 
+            this.LblTittleListPriority.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblTittleListPriority.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.LblTittleListPriority.Location = new System.Drawing.Point(-1, 58);
+            this.LblTittleListPriority.Name = "LblTittleListPriority";
+            this.LblTittleListPriority.Size = new System.Drawing.Size(1336, 20);
+            this.LblTittleListPriority.TabIndex = 36;
+            this.LblTittleListPriority.Text = "Listar Prioridades";
+            this.LblTittleListPriority.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // PnlListOrgPub
+            // 
+            this.PnlListOrgPub.Controls.Add(this.LtvListOrgPub);
+            this.PnlListOrgPub.Controls.Add(this.BtnDeleteOrgPub);
+            this.PnlListOrgPub.Controls.Add(this.BtnPutOrgPub);
+            this.PnlListOrgPub.Controls.Add(this.BtnVisuOrgPub);
+            this.PnlListOrgPub.Controls.Add(this.LblTitleListOrgPub);
+            this.PnlListOrgPub.Location = new System.Drawing.Point(0, 530);
+            this.PnlListOrgPub.Name = "PnlListOrgPub";
+            this.PnlListOrgPub.Size = new System.Drawing.Size(1336, 96);
+            this.PnlListOrgPub.TabIndex = 44;
+            this.PnlListOrgPub.Visible = false;
+            // 
+            // LtvListOrgPub
+            // 
+            this.LtvListOrgPub.AllowColumnReorder = true;
+            this.LtvListOrgPub.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader7,
+            this.columnHeader8,
+            this.columnHeader9,
+            this.columnHeader10,
+            this.columnHeader11});
+            this.LtvListOrgPub.FullRowSelect = true;
+            this.LtvListOrgPub.HideSelection = false;
+            this.LtvListOrgPub.Location = new System.Drawing.Point(312, 151);
+            this.LtvListOrgPub.MultiSelect = false;
+            this.LtvListOrgPub.Name = "LtvListOrgPub";
+            this.LtvListOrgPub.Size = new System.Drawing.Size(810, 168);
+            this.LtvListOrgPub.TabIndex = 35;
+            this.LtvListOrgPub.UseCompatibleStateImageBehavior = false;
+            this.LtvListOrgPub.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "Id";
+            // 
+            // columnHeader8
+            // 
+            this.columnHeader8.Text = "Nome do Órgão";
+            this.columnHeader8.Width = 214;
+            // 
+            // columnHeader9
+            // 
+            this.columnHeader9.Text = "Nome do responsável";
+            this.columnHeader9.Width = 167;
+            // 
+            // columnHeader10
+            // 
+            this.columnHeader10.Text = "Telefone";
+            this.columnHeader10.Width = 127;
+            // 
+            // columnHeader11
+            // 
+            this.columnHeader11.Text = "Email";
+            this.columnHeader11.Width = 238;
+            // 
+            // BtnDeleteOrgPub
+            // 
+            this.BtnDeleteOrgPub.Location = new System.Drawing.Point(772, 361);
+            this.BtnDeleteOrgPub.Name = "BtnDeleteOrgPub";
+            this.BtnDeleteOrgPub.Size = new System.Drawing.Size(86, 37);
+            this.BtnDeleteOrgPub.TabIndex = 43;
+            this.BtnDeleteOrgPub.Text = "DELETAR";
+            this.BtnDeleteOrgPub.UseVisualStyleBackColor = true;
+            this.BtnDeleteOrgPub.Click += new System.EventHandler(this.BtnDeleteOrgPub_Click);
+            // 
+            // BtnPutOrgPub
+            // 
+            this.BtnPutOrgPub.Location = new System.Drawing.Point(630, 361);
+            this.BtnPutOrgPub.Name = "BtnPutOrgPub";
+            this.BtnPutOrgPub.Size = new System.Drawing.Size(90, 38);
+            this.BtnPutOrgPub.TabIndex = 42;
+            this.BtnPutOrgPub.Text = "ATUALIZAR";
+            this.BtnPutOrgPub.UseVisualStyleBackColor = true;
+            // 
+            // BtnVisuOrgPub
+            // 
+            this.BtnVisuOrgPub.Location = new System.Drawing.Point(491, 361);
+            this.BtnVisuOrgPub.Name = "BtnVisuOrgPub";
+            this.BtnVisuOrgPub.Size = new System.Drawing.Size(97, 37);
+            this.BtnVisuOrgPub.TabIndex = 38;
+            this.BtnVisuOrgPub.Text = "VISUALIZAR";
+            this.BtnVisuOrgPub.UseVisualStyleBackColor = true;
+            // 
+            // LblTitleListOrgPub
+            // 
+            this.LblTitleListOrgPub.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblTitleListOrgPub.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.LblTitleListOrgPub.Location = new System.Drawing.Point(-1, 58);
+            this.LblTitleListOrgPub.Name = "LblTitleListOrgPub";
+            this.LblTitleListOrgPub.Size = new System.Drawing.Size(1336, 20);
+            this.LblTitleListOrgPub.TabIndex = 36;
+            this.LblTitleListOrgPub.Text = "Listar Órgãos públicos";
+            this.LblTitleListOrgPub.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // PnlListEvent
+            // 
+            this.PnlListEvent.Controls.Add(this.BtnDeleteEvent);
+            this.PnlListEvent.Controls.Add(this.BtnPutEvent);
+            this.PnlListEvent.Controls.Add(this.BtnVisuEvent);
+            this.PnlListEvent.Controls.Add(this.LtvListEvent);
+            this.PnlListEvent.Controls.Add(this.LblTittleListEvent);
+            this.PnlListEvent.Location = new System.Drawing.Point(3, 412);
+            this.PnlListEvent.Name = "PnlListEvent";
+            this.PnlListEvent.Size = new System.Drawing.Size(1336, 100);
+            this.PnlListEvent.TabIndex = 8;
+            this.PnlListEvent.Visible = false;
+            // 
+            // BtnDeleteEvent
+            // 
+            this.BtnDeleteEvent.Location = new System.Drawing.Point(772, 361);
+            this.BtnDeleteEvent.Name = "BtnDeleteEvent";
+            this.BtnDeleteEvent.Size = new System.Drawing.Size(86, 37);
+            this.BtnDeleteEvent.TabIndex = 43;
+            this.BtnDeleteEvent.Text = "DELETAR";
+            this.BtnDeleteEvent.UseVisualStyleBackColor = true;
+            this.BtnDeleteEvent.Click += new System.EventHandler(this.BtnDeleteEvent_Click);
+            // 
+            // BtnPutEvent
+            // 
+            this.BtnPutEvent.Location = new System.Drawing.Point(630, 361);
+            this.BtnPutEvent.Name = "BtnPutEvent";
+            this.BtnPutEvent.Size = new System.Drawing.Size(90, 38);
+            this.BtnPutEvent.TabIndex = 42;
+            this.BtnPutEvent.Text = "ATUALIZAR";
+            this.BtnPutEvent.UseVisualStyleBackColor = true;
+            // 
+            // BtnVisuEvent
+            // 
+            this.BtnVisuEvent.Location = new System.Drawing.Point(491, 361);
+            this.BtnVisuEvent.Name = "BtnVisuEvent";
+            this.BtnVisuEvent.Size = new System.Drawing.Size(97, 37);
+            this.BtnVisuEvent.TabIndex = 38;
+            this.BtnVisuEvent.Text = "VISUALIZAR";
+            this.BtnVisuEvent.UseVisualStyleBackColor = true;
+            // 
+            // LtvListEvent
+            // 
+            this.LtvListEvent.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.IdColumnListEvent,
+            this.NameColumnListEvent,
+            this.DateColumnListEvent,
+            this.HourColumnListEvent,
+            this.DescriptionColumnListEvent,
+            this.StatusColumnListEvent});
+            this.LtvListEvent.FullRowSelect = true;
+            this.LtvListEvent.HideSelection = false;
+            this.LtvListEvent.Location = new System.Drawing.Point(395, 161);
+            this.LtvListEvent.MultiSelect = false;
+            this.LtvListEvent.Name = "LtvListEvent";
+            this.LtvListEvent.Size = new System.Drawing.Size(636, 158);
+            this.LtvListEvent.TabIndex = 37;
+            this.LtvListEvent.UseCompatibleStateImageBehavior = false;
+            this.LtvListEvent.View = System.Windows.Forms.View.Details;
+            // 
+            // IdColumnListEvent
+            // 
+            this.IdColumnListEvent.Text = "Id";
+            // 
+            // NameColumnListEvent
+            // 
+            this.NameColumnListEvent.Text = "Nome do responsável";
+            this.NameColumnListEvent.Width = 330;
+            // 
+            // DateColumnListEvent
+            // 
+            this.DateColumnListEvent.Text = "Data";
+            // 
+            // HourColumnListEvent
+            // 
+            this.HourColumnListEvent.Text = "Hora";
+            // 
+            // DescriptionColumnListEvent
+            // 
+            this.DescriptionColumnListEvent.Text = "Descrição";
+            // 
+            // StatusColumnListEvent
+            // 
+            this.StatusColumnListEvent.Text = "Status";
+            // 
+            // LblTittleListEvent
+            // 
+            this.LblTittleListEvent.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblTittleListEvent.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.LblTittleListEvent.Location = new System.Drawing.Point(-1, 58);
+            this.LblTittleListEvent.Name = "LblTittleListEvent";
+            this.LblTittleListEvent.Size = new System.Drawing.Size(1336, 20);
+            this.LblTittleListEvent.TabIndex = 36;
+            this.LblTittleListEvent.Text = "Listar Event";
+            this.LblTittleListEvent.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // PnlListLeader
+            // 
+            this.PnlListLeader.Controls.Add(this.LtvListLeader);
+            this.PnlListLeader.Controls.Add(this.LblTittleListLeader);
+            this.PnlListLeader.Location = new System.Drawing.Point(3, 316);
+            this.PnlListLeader.Name = "PnlListLeader";
+            this.PnlListLeader.Size = new System.Drawing.Size(1340, 79);
+            this.PnlListLeader.TabIndex = 7;
+            this.PnlListLeader.Visible = false;
+            // 
+            // LtvListLeader
+            // 
+            this.LtvListLeader.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4,
+            this.columnHeader5,
+            this.columnHeader6});
+            this.LtvListLeader.FullRowSelect = true;
+            this.LtvListLeader.HideSelection = false;
+            this.LtvListLeader.Location = new System.Drawing.Point(334, 132);
+            this.LtvListLeader.MultiSelect = false;
+            this.LtvListLeader.Name = "LtvListLeader";
+            this.LtvListLeader.Size = new System.Drawing.Size(725, 168);
+            this.LtvListLeader.TabIndex = 35;
+            this.LtvListLeader.UseCompatibleStateImageBehavior = false;
+            this.LtvListLeader.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Id";
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Nome";
+            this.columnHeader2.Width = 214;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Cfp";
+            this.columnHeader3.Width = 88;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Rg";
+            this.columnHeader4.Width = 97;
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Data de entrada";
+            this.columnHeader5.Width = 131;
+            // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "Data de saida";
+            this.columnHeader6.Width = 131;
+            // 
+            // LblTittleListLeader
+            // 
+            this.LblTittleListLeader.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblTittleListLeader.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.LblTittleListLeader.Location = new System.Drawing.Point(0, 39);
+            this.LblTittleListLeader.Name = "LblTittleListLeader";
+            this.LblTittleListLeader.Size = new System.Drawing.Size(1336, 20);
+            this.LblTittleListLeader.TabIndex = 15;
+            this.LblTittleListLeader.Text = "Listar Lideres";
+            this.LblTittleListLeader.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // PnlListResident
             // 
             this.PnlListResident.Controls.Add(this.BtnDeleteListResi);
@@ -399,6 +903,25 @@ namespace SCAC.Pages
             this.PnlListResident.Size = new System.Drawing.Size(1339, 67);
             this.PnlListResident.TabIndex = 6;
             this.PnlListResident.Visible = false;
+            // 
+            // BtnDeleteListResi
+            // 
+            this.BtnDeleteListResi.Location = new System.Drawing.Point(783, 471);
+            this.BtnDeleteListResi.Name = "BtnDeleteListResi";
+            this.BtnDeleteListResi.Size = new System.Drawing.Size(100, 41);
+            this.BtnDeleteListResi.TabIndex = 14;
+            this.BtnDeleteListResi.Text = "DELETE";
+            this.BtnDeleteListResi.UseVisualStyleBackColor = true;
+            this.BtnDeleteListResi.Click += new System.EventHandler(this.BtnDeleteListResi_Click);
+            // 
+            // BtnPutListResi
+            // 
+            this.BtnPutListResi.Location = new System.Drawing.Point(631, 471);
+            this.BtnPutListResi.Name = "BtnPutListResi";
+            this.BtnPutListResi.Size = new System.Drawing.Size(100, 41);
+            this.BtnPutListResi.TabIndex = 13;
+            this.BtnPutListResi.Text = "ATUALIZAR";
+            this.BtnPutListResi.UseVisualStyleBackColor = true;
             // 
             // BtnVisuListResi
             // 
@@ -1081,480 +1604,423 @@ namespace SCAC.Pages
             this.LblTitleCadRein.Text = "Cadastrar reinvindicação";
             this.LblTitleCadRein.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // BtnPutListResi
-            // 
-            this.BtnPutListResi.Location = new System.Drawing.Point(631, 471);
-            this.BtnPutListResi.Name = "BtnPutListResi";
-            this.BtnPutListResi.Size = new System.Drawing.Size(100, 41);
-            this.BtnPutListResi.TabIndex = 13;
-            this.BtnPutListResi.Text = "ATUALIZAR";
-            this.BtnPutListResi.UseVisualStyleBackColor = true;
-            // 
-            // BtnDeleteListResi
-            // 
-            this.BtnDeleteListResi.Location = new System.Drawing.Point(783, 471);
-            this.BtnDeleteListResi.Name = "BtnDeleteListResi";
-            this.BtnDeleteListResi.Size = new System.Drawing.Size(100, 41);
-            this.BtnDeleteListResi.TabIndex = 14;
-            this.BtnDeleteListResi.Text = "DELETE";
-            this.BtnDeleteListResi.UseVisualStyleBackColor = true;
-            this.BtnDeleteListResi.Click += new System.EventHandler(this.BtnDeleteListResi_Click);
-            // 
-            // PnlListLeader
-            // 
-            this.PnlListLeader.Controls.Add(this.LtvListLeader);
-            this.PnlListLeader.Controls.Add(this.LblTittleListLeader);
-            this.PnlListLeader.Location = new System.Drawing.Point(3, 316);
-            this.PnlListLeader.Name = "PnlListLeader";
-            this.PnlListLeader.Size = new System.Drawing.Size(1340, 79);
-            this.PnlListLeader.TabIndex = 7;
-            this.PnlListLeader.Visible = false;
-            // 
-            // LblTittleListLeader
-            // 
-            this.LblTittleListLeader.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblTittleListLeader.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.LblTittleListLeader.Location = new System.Drawing.Point(0, 39);
-            this.LblTittleListLeader.Name = "LblTittleListLeader";
-            this.LblTittleListLeader.Size = new System.Drawing.Size(1336, 20);
-            this.LblTittleListLeader.TabIndex = 15;
-            this.LblTittleListLeader.Text = "Listar Lideres";
-            this.LblTittleListLeader.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // LtvListLeader
-            // 
-            this.LtvListLeader.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3,
-            this.columnHeader4,
-            this.columnHeader5,
-            this.columnHeader6});
-            this.LtvListLeader.FullRowSelect = true;
-            this.LtvListLeader.HideSelection = false;
-            this.LtvListLeader.Location = new System.Drawing.Point(334, 132);
-            this.LtvListLeader.MultiSelect = false;
-            this.LtvListLeader.Name = "LtvListLeader";
-            this.LtvListLeader.Size = new System.Drawing.Size(725, 168);
-            this.LtvListLeader.TabIndex = 35;
-            this.LtvListLeader.UseCompatibleStateImageBehavior = false;
-            this.LtvListLeader.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "Id";
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "Nome";
-            this.columnHeader2.Width = 214;
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "Cfp";
-            this.columnHeader3.Width = 88;
-            // 
-            // columnHeader4
-            // 
-            this.columnHeader4.Text = "Rg";
-            this.columnHeader4.Width = 97;
-            // 
-            // columnHeader5
-            // 
-            this.columnHeader5.Text = "Data de entrada";
-            this.columnHeader5.Width = 131;
-            // 
-            // columnHeader6
-            // 
-            this.columnHeader6.Text = "Data de saida";
-            this.columnHeader6.Width = 131;
-            // 
-            // PnlListEvent
-            // 
-            this.PnlListEvent.Controls.Add(this.BtnDeleteEvent);
-            this.PnlListEvent.Controls.Add(this.BtnPutEvent);
-            this.PnlListEvent.Controls.Add(this.BtnVisuEvent);
-            this.PnlListEvent.Controls.Add(this.LtvListEvent);
-            this.PnlListEvent.Controls.Add(this.LblTittleListEvent);
-            this.PnlListEvent.Location = new System.Drawing.Point(3, 412);
-            this.PnlListEvent.Name = "PnlListEvent";
-            this.PnlListEvent.Size = new System.Drawing.Size(1336, 100);
-            this.PnlListEvent.TabIndex = 8;
-            this.PnlListEvent.Visible = false;
-            // 
-            // LblTittleListEvent
-            // 
-            this.LblTittleListEvent.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblTittleListEvent.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.LblTittleListEvent.Location = new System.Drawing.Point(-1, 58);
-            this.LblTittleListEvent.Name = "LblTittleListEvent";
-            this.LblTittleListEvent.Size = new System.Drawing.Size(1336, 20);
-            this.LblTittleListEvent.TabIndex = 36;
-            this.LblTittleListEvent.Text = "Listar Event";
-            this.LblTittleListEvent.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // LtvListEvent
-            // 
-            this.LtvListEvent.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.IdColumnListEvent,
-            this.NameColumnListEvent,
-            this.DateColumnListEvent,
-            this.HourColumnListEvent,
-            this.DescriptionColumnListEvent,
-            this.StatusColumnListEvent});
-            this.LtvListEvent.FullRowSelect = true;
-            this.LtvListEvent.HideSelection = false;
-            this.LtvListEvent.Location = new System.Drawing.Point(395, 161);
-            this.LtvListEvent.MultiSelect = false;
-            this.LtvListEvent.Name = "LtvListEvent";
-            this.LtvListEvent.Size = new System.Drawing.Size(636, 158);
-            this.LtvListEvent.TabIndex = 37;
-            this.LtvListEvent.UseCompatibleStateImageBehavior = false;
-            this.LtvListEvent.View = System.Windows.Forms.View.Details;
-            // 
-            // IdColumnListEvent
-            // 
-            this.IdColumnListEvent.Text = "Id";
-            // 
-            // NameColumnListEvent
-            // 
-            this.NameColumnListEvent.Text = "Nome do responsável";
-            this.NameColumnListEvent.Width = 330;
-            // 
-            // BtnVisuEvent
-            // 
-            this.BtnVisuEvent.Location = new System.Drawing.Point(491, 361);
-            this.BtnVisuEvent.Name = "BtnVisuEvent";
-            this.BtnVisuEvent.Size = new System.Drawing.Size(97, 37);
-            this.BtnVisuEvent.TabIndex = 38;
-            this.BtnVisuEvent.Text = "VISUALIZAR";
-            this.BtnVisuEvent.UseVisualStyleBackColor = true;
-            // 
-            // BtnPutEvent
-            // 
-            this.BtnPutEvent.Location = new System.Drawing.Point(630, 361);
-            this.BtnPutEvent.Name = "BtnPutEvent";
-            this.BtnPutEvent.Size = new System.Drawing.Size(90, 38);
-            this.BtnPutEvent.TabIndex = 42;
-            this.BtnPutEvent.Text = "ATUALIZAR";
-            this.BtnPutEvent.UseVisualStyleBackColor = true;
-            // 
-            // BtnDeleteEvent
-            // 
-            this.BtnDeleteEvent.Location = new System.Drawing.Point(772, 361);
-            this.BtnDeleteEvent.Name = "BtnDeleteEvent";
-            this.BtnDeleteEvent.Size = new System.Drawing.Size(86, 37);
-            this.BtnDeleteEvent.TabIndex = 43;
-            this.BtnDeleteEvent.Text = "DELETAR";
-            this.BtnDeleteEvent.UseVisualStyleBackColor = true;
-            this.BtnDeleteEvent.Click += new System.EventHandler(this.BtnDeleteEvent_Click);
-            // 
-            // PnlListOrgPub
-            // 
-            this.PnlListOrgPub.Controls.Add(this.LtvListOrgPub);
-            this.PnlListOrgPub.Controls.Add(this.BtnDeleteOrgPub);
-            this.PnlListOrgPub.Controls.Add(this.BtnPutOrgPub);
-            this.PnlListOrgPub.Controls.Add(this.BtnVisuOrgPub);
-            this.PnlListOrgPub.Controls.Add(this.LblTitleListOrgPub);
-            this.PnlListOrgPub.Location = new System.Drawing.Point(0, 530);
-            this.PnlListOrgPub.Name = "PnlListOrgPub";
-            this.PnlListOrgPub.Size = new System.Drawing.Size(1336, 96);
-            this.PnlListOrgPub.TabIndex = 44;
-            this.PnlListOrgPub.Visible = false;
-            // 
-            // BtnDeleteOrgPub
-            // 
-            this.BtnDeleteOrgPub.Location = new System.Drawing.Point(772, 361);
-            this.BtnDeleteOrgPub.Name = "BtnDeleteOrgPub";
-            this.BtnDeleteOrgPub.Size = new System.Drawing.Size(86, 37);
-            this.BtnDeleteOrgPub.TabIndex = 43;
-            this.BtnDeleteOrgPub.Text = "DELETAR";
-            this.BtnDeleteOrgPub.UseVisualStyleBackColor = true;
-            this.BtnDeleteOrgPub.Click += new System.EventHandler(this.BtnDeleteOrgPub_Click);
-            // 
-            // BtnPutOrgPub
-            // 
-            this.BtnPutOrgPub.Location = new System.Drawing.Point(630, 361);
-            this.BtnPutOrgPub.Name = "BtnPutOrgPub";
-            this.BtnPutOrgPub.Size = new System.Drawing.Size(90, 38);
-            this.BtnPutOrgPub.TabIndex = 42;
-            this.BtnPutOrgPub.Text = "ATUALIZAR";
-            this.BtnPutOrgPub.UseVisualStyleBackColor = true;
-            // 
-            // BtnVisuOrgPub
-            // 
-            this.BtnVisuOrgPub.Location = new System.Drawing.Point(491, 361);
-            this.BtnVisuOrgPub.Name = "BtnVisuOrgPub";
-            this.BtnVisuOrgPub.Size = new System.Drawing.Size(97, 37);
-            this.BtnVisuOrgPub.TabIndex = 38;
-            this.BtnVisuOrgPub.Text = "VISUALIZAR";
-            this.BtnVisuOrgPub.UseVisualStyleBackColor = true;
-            // 
-            // LblTitleListOrgPub
-            // 
-            this.LblTitleListOrgPub.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblTitleListOrgPub.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.LblTitleListOrgPub.Location = new System.Drawing.Point(-1, 58);
-            this.LblTitleListOrgPub.Name = "LblTitleListOrgPub";
-            this.LblTitleListOrgPub.Size = new System.Drawing.Size(1336, 20);
-            this.LblTitleListOrgPub.TabIndex = 36;
-            this.LblTitleListOrgPub.Text = "Listar Órgãos públicos";
-            this.LblTitleListOrgPub.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // LtvListOrgPub
-            // 
-            this.LtvListOrgPub.AllowColumnReorder = true;
-            this.LtvListOrgPub.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader7,
-            this.columnHeader8,
-            this.columnHeader9,
-            this.columnHeader10,
-            this.columnHeader11});
-            this.LtvListOrgPub.FullRowSelect = true;
-            this.LtvListOrgPub.HideSelection = false;
-            this.LtvListOrgPub.Location = new System.Drawing.Point(312, 151);
-            this.LtvListOrgPub.MultiSelect = false;
-            this.LtvListOrgPub.Name = "LtvListOrgPub";
-            this.LtvListOrgPub.Size = new System.Drawing.Size(810, 168);
-            this.LtvListOrgPub.TabIndex = 35;
-            this.LtvListOrgPub.UseCompatibleStateImageBehavior = false;
-            this.LtvListOrgPub.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader7
-            // 
-            this.columnHeader7.Text = "Id";
-            // 
-            // columnHeader8
-            // 
-            this.columnHeader8.Text = "Nome do Órgão";
-            this.columnHeader8.Width = 214;
-            // 
-            // columnHeader9
-            // 
-            this.columnHeader9.Text = "Nome do responsável";
-            this.columnHeader9.Width = 167;
-            // 
-            // columnHeader10
-            // 
-            this.columnHeader10.Text = "Telefone";
-            this.columnHeader10.Width = 127;
-            // 
-            // columnHeader11
-            // 
-            this.columnHeader11.Text = "Email";
-            this.columnHeader11.Width = 238;
-            // 
-            // cadastrarPrioridadeToolStripMenuItem
-            // 
-            this.cadastrarPrioridadeToolStripMenuItem.Name = "cadastrarPrioridadeToolStripMenuItem";
-            this.cadastrarPrioridadeToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
-            this.cadastrarPrioridadeToolStripMenuItem.Text = "Cadastrar prioridade";
-            // 
-            // listarPrioridadesToolStripMenuItem
-            // 
-            this.listarPrioridadesToolStripMenuItem.Name = "listarPrioridadesToolStripMenuItem";
-            this.listarPrioridadesToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
-            this.listarPrioridadesToolStripMenuItem.Text = "Listar Prioridades";
-            this.listarPrioridadesToolStripMenuItem.Click += new System.EventHandler(this.listarPrioridadesToolStripMenuItem_Click);
-            // 
-            // prioridadeToolStripMenuItem
-            // 
-            this.prioridadeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cadastrarPrioridadeToolStripMenuItem,
-            this.listarPrioridadesToolStripMenuItem});
-            this.prioridadeToolStripMenuItem.Name = "prioridadeToolStripMenuItem";
-            this.prioridadeToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
-            this.prioridadeToolStripMenuItem.Text = "PRIORIDADE";
-            // 
-            // sTATUSToolStripMenuItem
-            // 
-            this.sTATUSToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cadastrarStatusToolStripMenuItem,
-            this.listarStatusToolStripMenuItem});
-            this.sTATUSToolStripMenuItem.Name = "sTATUSToolStripMenuItem";
-            this.sTATUSToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
-            this.sTATUSToolStripMenuItem.Text = "STATUS";
-            // 
-            // cadastrarStatusToolStripMenuItem
-            // 
-            this.cadastrarStatusToolStripMenuItem.Name = "cadastrarStatusToolStripMenuItem";
-            this.cadastrarStatusToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.cadastrarStatusToolStripMenuItem.Text = "Cadastrar status";
-            // 
-            // listarStatusToolStripMenuItem
-            // 
-            this.listarStatusToolStripMenuItem.Name = "listarStatusToolStripMenuItem";
-            this.listarStatusToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.listarStatusToolStripMenuItem.Text = "Listar status";
-            this.listarStatusToolStripMenuItem.Click += new System.EventHandler(this.listarStatusToolStripMenuItem_Click);
-            // 
-            // PnlListPriority
-            // 
-            this.PnlListPriority.Controls.Add(this.BtnDeletePriority);
-            this.PnlListPriority.Controls.Add(this.BtnPutPriority);
-            this.PnlListPriority.Controls.Add(this.BtnVisuPriority);
-            this.PnlListPriority.Controls.Add(this.LtvListPriority);
-            this.PnlListPriority.Controls.Add(this.LblTittleListPriority);
-            this.PnlListPriority.Location = new System.Drawing.Point(5, 817);
-            this.PnlListPriority.Name = "PnlListPriority";
-            this.PnlListPriority.Size = new System.Drawing.Size(1336, 127);
-            this.PnlListPriority.TabIndex = 44;
-            this.PnlListPriority.Visible = false;
-            // 
-            // BtnDeletePriority
-            // 
-            this.BtnDeletePriority.Location = new System.Drawing.Point(772, 361);
-            this.BtnDeletePriority.Name = "BtnDeletePriority";
-            this.BtnDeletePriority.Size = new System.Drawing.Size(86, 37);
-            this.BtnDeletePriority.TabIndex = 43;
-            this.BtnDeletePriority.Text = "DELETAR";
-            this.BtnDeletePriority.UseVisualStyleBackColor = true;
-            this.BtnDeletePriority.Click += new System.EventHandler(this.BtnDeletePriority_Click);
-            // 
-            // BtnPutPriority
-            // 
-            this.BtnPutPriority.Location = new System.Drawing.Point(630, 361);
-            this.BtnPutPriority.Name = "BtnPutPriority";
-            this.BtnPutPriority.Size = new System.Drawing.Size(90, 38);
-            this.BtnPutPriority.TabIndex = 42;
-            this.BtnPutPriority.Text = "ATUALIZAR";
-            this.BtnPutPriority.UseVisualStyleBackColor = true;
-            // 
-            // BtnVisuPriority
-            // 
-            this.BtnVisuPriority.Location = new System.Drawing.Point(491, 361);
-            this.BtnVisuPriority.Name = "BtnVisuPriority";
-            this.BtnVisuPriority.Size = new System.Drawing.Size(97, 37);
-            this.BtnVisuPriority.TabIndex = 38;
-            this.BtnVisuPriority.Text = "VISUALIZAR";
-            this.BtnVisuPriority.UseVisualStyleBackColor = true;
-            // 
-            // LtvListPriority
-            // 
-            this.LtvListPriority.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader17,
-            this.columnHeader18});
-            this.LtvListPriority.FullRowSelect = true;
-            this.LtvListPriority.HideSelection = false;
-            this.LtvListPriority.Location = new System.Drawing.Point(475, 161);
-            this.LtvListPriority.MultiSelect = false;
-            this.LtvListPriority.Name = "LtvListPriority";
-            this.LtvListPriority.Size = new System.Drawing.Size(402, 158);
-            this.LtvListPriority.TabIndex = 37;
-            this.LtvListPriority.UseCompatibleStateImageBehavior = false;
-            this.LtvListPriority.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader17
-            // 
-            this.columnHeader17.Text = "Id";
-            // 
-            // columnHeader18
-            // 
-            this.columnHeader18.Text = "Descrição";
-            this.columnHeader18.Width = 330;
-            // 
-            // LblTittleListPriority
-            // 
-            this.LblTittleListPriority.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblTittleListPriority.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.LblTittleListPriority.Location = new System.Drawing.Point(-1, 58);
-            this.LblTittleListPriority.Name = "LblTittleListPriority";
-            this.LblTittleListPriority.Size = new System.Drawing.Size(1336, 20);
-            this.LblTittleListPriority.TabIndex = 36;
-            this.LblTittleListPriority.Text = "Listar Prioridades";
-            this.LblTittleListPriority.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // PnlListStatus
-            // 
-            this.PnlListStatus.Controls.Add(this.BtnDeleteStatus);
-            this.PnlListStatus.Controls.Add(this.BtnDPutStatus);
-            this.PnlListStatus.Controls.Add(this.BtnVisuStatus);
-            this.PnlListStatus.Controls.Add(this.LtvListStatus);
-            this.PnlListStatus.Controls.Add(LblTittleListStatus);
-            this.PnlListStatus.Location = new System.Drawing.Point(4, 692);
-            this.PnlListStatus.Name = "PnlListStatus";
-            this.PnlListStatus.Size = new System.Drawing.Size(1336, 96);
-            this.PnlListStatus.TabIndex = 44;
-            this.PnlListStatus.Visible = false;
-            // 
-            // BtnDeleteStatus
-            // 
-            this.BtnDeleteStatus.Location = new System.Drawing.Point(772, 361);
-            this.BtnDeleteStatus.Name = "BtnDeleteStatus";
-            this.BtnDeleteStatus.Size = new System.Drawing.Size(86, 37);
-            this.BtnDeleteStatus.TabIndex = 43;
-            this.BtnDeleteStatus.Text = "DELETAR";
-            this.BtnDeleteStatus.UseVisualStyleBackColor = true;
-            this.BtnDeleteStatus.Click += new System.EventHandler(this.BtnDeleteStatus_Click);
-            // 
-            // BtnDPutStatus
-            // 
-            this.BtnDPutStatus.Location = new System.Drawing.Point(630, 361);
-            this.BtnDPutStatus.Name = "BtnDPutStatus";
-            this.BtnDPutStatus.Size = new System.Drawing.Size(90, 38);
-            this.BtnDPutStatus.TabIndex = 42;
-            this.BtnDPutStatus.Text = "ATUALIZAR";
-            this.BtnDPutStatus.UseVisualStyleBackColor = true;
-            // 
-            // BtnVisuStatus
-            // 
-            this.BtnVisuStatus.Location = new System.Drawing.Point(491, 361);
-            this.BtnVisuStatus.Name = "BtnVisuStatus";
-            this.BtnVisuStatus.Size = new System.Drawing.Size(97, 37);
-            this.BtnVisuStatus.TabIndex = 38;
-            this.BtnVisuStatus.Text = "VISUALIZAR";
-            this.BtnVisuStatus.UseVisualStyleBackColor = true;
-            // 
-            // LtvListStatus
-            // 
-            this.LtvListStatus.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader12,
-            this.columnHeader13});
-            this.LtvListStatus.FullRowSelect = true;
-            this.LtvListStatus.HideSelection = false;
-            this.LtvListStatus.Location = new System.Drawing.Point(475, 161);
-            this.LtvListStatus.MultiSelect = false;
-            this.LtvListStatus.Name = "LtvListStatus";
-            this.LtvListStatus.Size = new System.Drawing.Size(402, 158);
-            this.LtvListStatus.TabIndex = 37;
-            this.LtvListStatus.UseCompatibleStateImageBehavior = false;
-            this.LtvListStatus.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader12
-            // 
-            this.columnHeader12.Text = "Id";
-            // 
-            // columnHeader13
-            // 
-            this.columnHeader13.Text = "Descrição";
-            this.columnHeader13.Width = 330;
-            // 
-            // LblTittleListStatus
-            // 
-            LblTittleListStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            LblTittleListStatus.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            LblTittleListStatus.Location = new System.Drawing.Point(-8, 37);
-            LblTittleListStatus.Name = "LblTittleListStatus";
-            LblTittleListStatus.Size = new System.Drawing.Size(1336, 36);
-            LblTittleListStatus.TabIndex = 36;
-            LblTittleListStatus.Text = "Listar Status";
-            LblTittleListStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // DateColumnListEvent
-            // 
-            this.DateColumnListEvent.Text = "Data";
-            // 
-            // HourColumnListEvent
-            // 
-            this.HourColumnListEvent.Text = "Hora";
-            // 
-            // DescriptionColumnListEvent
-            // 
-            this.DescriptionColumnListEvent.Text = "Descrição";
-            // 
-            // StatusColumnListEvent
-            // 
-            this.StatusColumnListEvent.Text = "Status";
+            // PnlCreateEvent
+            // 
+            this.PnlCreateEvent.Controls.Add(this.BtnSaveCreateEvent);
+            this.PnlCreateEvent.Controls.Add(this.CmbStatusCreateEvent);
+            this.PnlCreateEvent.Controls.Add(this.TxbDescriptionCreateEvent);
+            this.PnlCreateEvent.Controls.Add(this.TxbHourCreateEvent);
+            this.PnlCreateEvent.Controls.Add(this.CldDateCreateEvent);
+            this.PnlCreateEvent.Controls.Add(this.TxbResponsableCreateEvent);
+            this.PnlCreateEvent.Controls.Add(this.LblStatusCreateEvent);
+            this.PnlCreateEvent.Controls.Add(this.LblDescriptionCreateEvent);
+            this.PnlCreateEvent.Controls.Add(this.LblHourCreateEvent);
+            this.PnlCreateEvent.Controls.Add(this.LblDateCreateEvent);
+            this.PnlCreateEvent.Controls.Add(this.LblResponsableCreateEvent);
+            this.PnlCreateEvent.Controls.Add(this.LblTittleCreateEvent);
+            this.PnlCreateEvent.Location = new System.Drawing.Point(3, 961);
+            this.PnlCreateEvent.Name = "PnlCreateEvent";
+            this.PnlCreateEvent.Size = new System.Drawing.Size(1337, 86);
+            this.PnlCreateEvent.TabIndex = 46;
+            this.PnlCreateEvent.Visible = false;
+            // 
+            // LblTittleCreateEvent
+            // 
+            this.LblTittleCreateEvent.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblTittleCreateEvent.Location = new System.Drawing.Point(1, 37);
+            this.LblTittleCreateEvent.Name = "LblTittleCreateEvent";
+            this.LblTittleCreateEvent.Size = new System.Drawing.Size(1332, 23);
+            this.LblTittleCreateEvent.TabIndex = 0;
+            this.LblTittleCreateEvent.Text = "Cadastrar Evento";
+            this.LblTittleCreateEvent.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // LblResponsableCreateEvent
+            // 
+            this.LblResponsableCreateEvent.AutoSize = true;
+            this.LblResponsableCreateEvent.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblResponsableCreateEvent.Location = new System.Drawing.Point(383, 107);
+            this.LblResponsableCreateEvent.Name = "LblResponsableCreateEvent";
+            this.LblResponsableCreateEvent.Size = new System.Drawing.Size(162, 20);
+            this.LblResponsableCreateEvent.TabIndex = 1;
+            this.LblResponsableCreateEvent.Text = "Nome do responsável";
+            // 
+            // LblDateCreateEvent
+            // 
+            this.LblDateCreateEvent.AutoSize = true;
+            this.LblDateCreateEvent.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblDateCreateEvent.Location = new System.Drawing.Point(384, 229);
+            this.LblDateCreateEvent.Name = "LblDateCreateEvent";
+            this.LblDateCreateEvent.Size = new System.Drawing.Size(118, 20);
+            this.LblDateCreateEvent.TabIndex = 2;
+            this.LblDateCreateEvent.Text = "Data do evento";
+            // 
+            // LblHourCreateEvent
+            // 
+            this.LblHourCreateEvent.AutoSize = true;
+            this.LblHourCreateEvent.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblHourCreateEvent.Location = new System.Drawing.Point(728, 246);
+            this.LblHourCreateEvent.Name = "LblHourCreateEvent";
+            this.LblHourCreateEvent.Size = new System.Drawing.Size(118, 20);
+            this.LblHourCreateEvent.TabIndex = 3;
+            this.LblHourCreateEvent.Text = "Hora do evento";
+            // 
+            // LblDescriptionCreateEvent
+            // 
+            this.LblDescriptionCreateEvent.AutoSize = true;
+            this.LblDescriptionCreateEvent.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblDescriptionCreateEvent.Location = new System.Drawing.Point(383, 440);
+            this.LblDescriptionCreateEvent.Name = "LblDescriptionCreateEvent";
+            this.LblDescriptionCreateEvent.Size = new System.Drawing.Size(80, 20);
+            this.LblDescriptionCreateEvent.TabIndex = 4;
+            this.LblDescriptionCreateEvent.Text = "Descrição";
+            // 
+            // LblStatusCreateEvent
+            // 
+            this.LblStatusCreateEvent.AutoSize = true;
+            this.LblStatusCreateEvent.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblStatusCreateEvent.Location = new System.Drawing.Point(384, 532);
+            this.LblStatusCreateEvent.Name = "LblStatusCreateEvent";
+            this.LblStatusCreateEvent.Size = new System.Drawing.Size(56, 20);
+            this.LblStatusCreateEvent.TabIndex = 5;
+            this.LblStatusCreateEvent.Text = "Status";
+            this.LblStatusCreateEvent.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // TxbResponsableCreateEvent
+            // 
+            this.TxbResponsableCreateEvent.Location = new System.Drawing.Point(387, 154);
+            this.TxbResponsableCreateEvent.Name = "TxbResponsableCreateEvent";
+            this.TxbResponsableCreateEvent.Size = new System.Drawing.Size(473, 20);
+            this.TxbResponsableCreateEvent.TabIndex = 6;
+            // 
+            // CldDateCreateEvent
+            // 
+            this.CldDateCreateEvent.Location = new System.Drawing.Point(395, 266);
+            this.CldDateCreateEvent.MaxSelectionCount = 1;
+            this.CldDateCreateEvent.Name = "CldDateCreateEvent";
+            this.CldDateCreateEvent.TabIndex = 7;
+            // 
+            // TxbHourCreateEvent
+            // 
+            this.TxbHourCreateEvent.Location = new System.Drawing.Point(732, 290);
+            this.TxbHourCreateEvent.Mask = "00:00";
+            this.TxbHourCreateEvent.Name = "TxbHourCreateEvent";
+            this.TxbHourCreateEvent.Size = new System.Drawing.Size(75, 20);
+            this.TxbHourCreateEvent.TabIndex = 8;
+            this.TxbHourCreateEvent.ValidatingType = typeof(System.DateTime);
+            // 
+            // TxbDescriptionCreateEvent
+            // 
+            this.TxbDescriptionCreateEvent.Location = new System.Drawing.Point(402, 480);
+            this.TxbDescriptionCreateEvent.Name = "TxbDescriptionCreateEvent";
+            this.TxbDescriptionCreateEvent.Size = new System.Drawing.Size(522, 20);
+            this.TxbDescriptionCreateEvent.TabIndex = 9;
+            // 
+            // CmbStatusCreateEvent
+            // 
+            this.CmbStatusCreateEvent.FormattingEnabled = true;
+            this.CmbStatusCreateEvent.Location = new System.Drawing.Point(395, 575);
+            this.CmbStatusCreateEvent.Name = "CmbStatusCreateEvent";
+            this.CmbStatusCreateEvent.Size = new System.Drawing.Size(150, 21);
+            this.CmbStatusCreateEvent.TabIndex = 10;
+            // 
+            // BtnSaveCreateEvent
+            // 
+            this.BtnSaveCreateEvent.Location = new System.Drawing.Point(584, 624);
+            this.BtnSaveCreateEvent.Name = "BtnSaveCreateEvent";
+            this.BtnSaveCreateEvent.Size = new System.Drawing.Size(99, 38);
+            this.BtnSaveCreateEvent.TabIndex = 11;
+            this.BtnSaveCreateEvent.Text = "SALVAR";
+            this.BtnSaveCreateEvent.UseVisualStyleBackColor = true;
+            this.BtnSaveCreateEvent.Click += new System.EventHandler(this.BtnSaveCreateEvent_Click);
+            // 
+            // PnlCreateResident
+            // 
+            this.PnlCreateResident.Controls.Add(this.CmbSexCreateResident);
+            this.PnlCreateResident.Controls.Add(this.BtnSaveCreateResident);
+            this.PnlCreateResident.Controls.Add(this.TxbComplementCreateResident);
+            this.PnlCreateResident.Controls.Add(this.TxbUfCreateResident);
+            this.PnlCreateResident.Controls.Add(this.TxbCityCreateResident);
+            this.PnlCreateResident.Controls.Add(this.TxbNumberCreateResident);
+            this.PnlCreateResident.Controls.Add(this.TxbCepCreateResident);
+            this.PnlCreateResident.Controls.Add(this.TxbDistrictCreateResident);
+            this.PnlCreateResident.Controls.Add(this.TxbAddressCreateResident);
+            this.PnlCreateResident.Controls.Add(this.TxbTelephoneCreateResident);
+            this.PnlCreateResident.Controls.Add(this.CldBirthdayCreateResident);
+            this.PnlCreateResident.Controls.Add(this.TxbCpfCreateResident);
+            this.PnlCreateResident.Controls.Add(this.TxbRgCreateResident);
+            this.PnlCreateResident.Controls.Add(this.TxbFullNameCreateResident);
+            this.PnlCreateResident.Controls.Add(this.LblComplementCreateResident);
+            this.PnlCreateResident.Controls.Add(this.LblCepCreateResident);
+            this.PnlCreateResident.Controls.Add(this.LblUfCreateResident);
+            this.PnlCreateResident.Controls.Add(this.LblCityCreateResident);
+            this.PnlCreateResident.Controls.Add(this.LblNumberCreateResident);
+            this.PnlCreateResident.Controls.Add(this.LblDistrictCreateResident);
+            this.PnlCreateResident.Controls.Add(this.LblAddressCreateResident);
+            this.PnlCreateResident.Controls.Add(this.LblSexCreateResident);
+            this.PnlCreateResident.Controls.Add(this.LblTelephoneCreateResident);
+            this.PnlCreateResident.Controls.Add(this.label1);
+            this.PnlCreateResident.Controls.Add(this.LblCpfCreateResident);
+            this.PnlCreateResident.Controls.Add(this.LblFullNameCreateResident);
+            this.PnlCreateResident.Controls.Add(this.LblRgCreateResident);
+            this.PnlCreateResident.Controls.Add(this.LbltTitleCreateResident);
+            this.PnlCreateResident.Location = new System.Drawing.Point(3, 1072);
+            this.PnlCreateResident.Name = "PnlCreateResident";
+            this.PnlCreateResident.Size = new System.Drawing.Size(1337, 89);
+            this.PnlCreateResident.TabIndex = 47;
+            this.PnlCreateResident.Visible = false;
+            // 
+            // LbltTitleCreateResident
+            // 
+            this.LbltTitleCreateResident.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LbltTitleCreateResident.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.LbltTitleCreateResident.Location = new System.Drawing.Point(1, 43);
+            this.LbltTitleCreateResident.Name = "LbltTitleCreateResident";
+            this.LbltTitleCreateResident.Size = new System.Drawing.Size(1334, 23);
+            this.LbltTitleCreateResident.TabIndex = 0;
+            this.LbltTitleCreateResident.Text = "Cadastrar Morador";
+            this.LbltTitleCreateResident.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // LblRgCreateResident
+            // 
+            this.LblRgCreateResident.AutoSize = true;
+            this.LblRgCreateResident.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblRgCreateResident.Location = new System.Drawing.Point(429, 192);
+            this.LblRgCreateResident.Name = "LblRgCreateResident";
+            this.LblRgCreateResident.Size = new System.Drawing.Size(34, 20);
+            this.LblRgCreateResident.TabIndex = 1;
+            this.LblRgCreateResident.Text = "RG";
+            // 
+            // LblFullNameCreateResident
+            // 
+            this.LblFullNameCreateResident.AutoSize = true;
+            this.LblFullNameCreateResident.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblFullNameCreateResident.Location = new System.Drawing.Point(425, 135);
+            this.LblFullNameCreateResident.Name = "LblFullNameCreateResident";
+            this.LblFullNameCreateResident.Size = new System.Drawing.Size(120, 20);
+            this.LblFullNameCreateResident.TabIndex = 2;
+            this.LblFullNameCreateResident.Text = "Nome completo";
+            // 
+            // LblCpfCreateResident
+            // 
+            this.LblCpfCreateResident.AutoSize = true;
+            this.LblCpfCreateResident.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblCpfCreateResident.Location = new System.Drawing.Point(611, 194);
+            this.LblCpfCreateResident.Name = "LblCpfCreateResident";
+            this.LblCpfCreateResident.Size = new System.Drawing.Size(40, 20);
+            this.LblCpfCreateResident.TabIndex = 3;
+            this.LblCpfCreateResident.Text = "CPF";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(425, 254);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(146, 20);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Data de aniversário";
+            // 
+            // LblTelephoneCreateResident
+            // 
+            this.LblTelephoneCreateResident.AutoSize = true;
+            this.LblTelephoneCreateResident.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblTelephoneCreateResident.Location = new System.Drawing.Point(429, 513);
+            this.LblTelephoneCreateResident.Name = "LblTelephoneCreateResident";
+            this.LblTelephoneCreateResident.Size = new System.Drawing.Size(71, 20);
+            this.LblTelephoneCreateResident.TabIndex = 5;
+            this.LblTelephoneCreateResident.Text = "Telefone";
+            // 
+            // LblSexCreateResident
+            // 
+            this.LblSexCreateResident.AutoSize = true;
+            this.LblSexCreateResident.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblSexCreateResident.Location = new System.Drawing.Point(695, 513);
+            this.LblSexCreateResident.Name = "LblSexCreateResident";
+            this.LblSexCreateResident.Size = new System.Drawing.Size(45, 20);
+            this.LblSexCreateResident.TabIndex = 6;
+            this.LblSexCreateResident.Text = "Sexo";
+            // 
+            // LblAddressCreateResident
+            // 
+            this.LblAddressCreateResident.AutoSize = true;
+            this.LblAddressCreateResident.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblAddressCreateResident.Location = new System.Drawing.Point(429, 574);
+            this.LblAddressCreateResident.Name = "LblAddressCreateResident";
+            this.LblAddressCreateResident.Size = new System.Drawing.Size(91, 20);
+            this.LblAddressCreateResident.TabIndex = 7;
+            this.LblAddressCreateResident.Text = "Logradouro";
+            // 
+            // LblDistrictCreateResident
+            // 
+            this.LblDistrictCreateResident.AutoSize = true;
+            this.LblDistrictCreateResident.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblDistrictCreateResident.Location = new System.Drawing.Point(783, 574);
+            this.LblDistrictCreateResident.Name = "LblDistrictCreateResident";
+            this.LblDistrictCreateResident.Size = new System.Drawing.Size(51, 20);
+            this.LblDistrictCreateResident.TabIndex = 8;
+            this.LblDistrictCreateResident.Text = "Bairro";
+            // 
+            // LblNumberCreateResident
+            // 
+            this.LblNumberCreateResident.AutoSize = true;
+            this.LblNumberCreateResident.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblNumberCreateResident.Location = new System.Drawing.Point(761, 622);
+            this.LblNumberCreateResident.Name = "LblNumberCreateResident";
+            this.LblNumberCreateResident.Size = new System.Drawing.Size(65, 20);
+            this.LblNumberCreateResident.TabIndex = 9;
+            this.LblNumberCreateResident.Text = "Numero";
+            // 
+            // LblCityCreateResident
+            // 
+            this.LblCityCreateResident.AutoSize = true;
+            this.LblCityCreateResident.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblCityCreateResident.Location = new System.Drawing.Point(425, 671);
+            this.LblCityCreateResident.Name = "LblCityCreateResident";
+            this.LblCityCreateResident.Size = new System.Drawing.Size(59, 20);
+            this.LblCityCreateResident.TabIndex = 10;
+            this.LblCityCreateResident.Text = "Cidade";
+            // 
+            // LblUfCreateResident
+            // 
+            this.LblUfCreateResident.AutoSize = true;
+            this.LblUfCreateResident.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblUfCreateResident.Location = new System.Drawing.Point(757, 669);
+            this.LblUfCreateResident.Name = "LblUfCreateResident";
+            this.LblUfCreateResident.Size = new System.Drawing.Size(31, 20);
+            this.LblUfCreateResident.TabIndex = 11;
+            this.LblUfCreateResident.Text = "UF";
+            // 
+            // LblCepCreateResident
+            // 
+            this.LblCepCreateResident.AutoSize = true;
+            this.LblCepCreateResident.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblCepCreateResident.Location = new System.Drawing.Point(430, 625);
+            this.LblCepCreateResident.Name = "LblCepCreateResident";
+            this.LblCepCreateResident.Size = new System.Drawing.Size(41, 20);
+            this.LblCepCreateResident.TabIndex = 12;
+            this.LblCepCreateResident.Text = "CEP";
+            // 
+            // LblComplementCreateResident
+            // 
+            this.LblComplementCreateResident.AutoSize = true;
+            this.LblComplementCreateResident.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblComplementCreateResident.Location = new System.Drawing.Point(426, 729);
+            this.LblComplementCreateResident.Name = "LblComplementCreateResident";
+            this.LblComplementCreateResident.Size = new System.Drawing.Size(108, 20);
+            this.LblComplementCreateResident.TabIndex = 13;
+            this.LblComplementCreateResident.Text = "Complemento";
+            // 
+            // TxbFullNameCreateResident
+            // 
+            this.TxbFullNameCreateResident.Location = new System.Drawing.Point(583, 137);
+            this.TxbFullNameCreateResident.Name = "TxbFullNameCreateResident";
+            this.TxbFullNameCreateResident.Size = new System.Drawing.Size(198, 20);
+            this.TxbFullNameCreateResident.TabIndex = 14;
+            // 
+            // TxbRgCreateResident
+            // 
+            this.TxbRgCreateResident.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.TxbRgCreateResident.Location = new System.Drawing.Point(476, 194);
+            this.TxbRgCreateResident.Mask = "0.000.000";
+            this.TxbRgCreateResident.Name = "TxbRgCreateResident";
+            this.TxbRgCreateResident.Size = new System.Drawing.Size(69, 20);
+            this.TxbRgCreateResident.TabIndex = 15;
+            this.TxbRgCreateResident.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            // 
+            // TxbCpfCreateResident
+            // 
+            this.TxbCpfCreateResident.Location = new System.Drawing.Point(657, 194);
+            this.TxbCpfCreateResident.Mask = "000.000.000-00";
+            this.TxbCpfCreateResident.Name = "TxbCpfCreateResident";
+            this.TxbCpfCreateResident.Size = new System.Drawing.Size(91, 20);
+            this.TxbCpfCreateResident.TabIndex = 16;
+            this.TxbCpfCreateResident.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            // 
+            // CldBirthdayCreateResident
+            // 
+            this.CldBirthdayCreateResident.Location = new System.Drawing.Point(434, 290);
+            this.CldBirthdayCreateResident.MaxSelectionCount = 1;
+            this.CldBirthdayCreateResident.Name = "CldBirthdayCreateResident";
+            this.CldBirthdayCreateResident.TabIndex = 17;
+            // 
+            // TxbTelephoneCreateResident
+            // 
+            this.TxbTelephoneCreateResident.Location = new System.Drawing.Point(506, 513);
+            this.TxbTelephoneCreateResident.Mask = "(00) 00000-0000";
+            this.TxbTelephoneCreateResident.Name = "TxbTelephoneCreateResident";
+            this.TxbTelephoneCreateResident.Size = new System.Drawing.Size(85, 20);
+            this.TxbTelephoneCreateResident.TabIndex = 18;
+            // 
+            // TxbAddressCreateResident
+            // 
+            this.TxbAddressCreateResident.Location = new System.Drawing.Point(541, 573);
+            this.TxbAddressCreateResident.Name = "TxbAddressCreateResident";
+            this.TxbAddressCreateResident.Size = new System.Drawing.Size(195, 20);
+            this.TxbAddressCreateResident.TabIndex = 20;
+            // 
+            // TxbDistrictCreateResident
+            // 
+            this.TxbDistrictCreateResident.Location = new System.Drawing.Point(840, 573);
+            this.TxbDistrictCreateResident.Name = "TxbDistrictCreateResident";
+            this.TxbDistrictCreateResident.Size = new System.Drawing.Size(191, 20);
+            this.TxbDistrictCreateResident.TabIndex = 21;
+            // 
+            // TxbCepCreateResident
+            // 
+            this.TxbCepCreateResident.Location = new System.Drawing.Point(477, 627);
+            this.TxbCepCreateResident.Mask = "00000-000";
+            this.TxbCepCreateResident.Name = "TxbCepCreateResident";
+            this.TxbCepCreateResident.Size = new System.Drawing.Size(57, 20);
+            this.TxbCepCreateResident.TabIndex = 22;
+            // 
+            // TxbNumberCreateResident
+            // 
+            this.TxbNumberCreateResident.Location = new System.Drawing.Point(840, 622);
+            this.TxbNumberCreateResident.Name = "TxbNumberCreateResident";
+            this.TxbNumberCreateResident.Size = new System.Drawing.Size(56, 20);
+            this.TxbNumberCreateResident.TabIndex = 23;
+            // 
+            // TxbCityCreateResident
+            // 
+            this.TxbCityCreateResident.Location = new System.Drawing.Point(490, 673);
+            this.TxbCityCreateResident.Name = "TxbCityCreateResident";
+            this.TxbCityCreateResident.Size = new System.Drawing.Size(193, 20);
+            this.TxbCityCreateResident.TabIndex = 24;
+            // 
+            // TxbUfCreateResident
+            // 
+            this.TxbUfCreateResident.Location = new System.Drawing.Point(795, 670);
+            this.TxbUfCreateResident.Name = "TxbUfCreateResident";
+            this.TxbUfCreateResident.Size = new System.Drawing.Size(31, 20);
+            this.TxbUfCreateResident.TabIndex = 25;
+            // 
+            // TxbComplementCreateResident
+            // 
+            this.TxbComplementCreateResident.Location = new System.Drawing.Point(541, 729);
+            this.TxbComplementCreateResident.Name = "TxbComplementCreateResident";
+            this.TxbComplementCreateResident.Size = new System.Drawing.Size(467, 20);
+            this.TxbComplementCreateResident.TabIndex = 26;
+            // 
+            // BtnSaveCreateResident
+            // 
+            this.BtnSaveCreateResident.Location = new System.Drawing.Point(681, 808);
+            this.BtnSaveCreateResident.Name = "BtnSaveCreateResident";
+            this.BtnSaveCreateResident.Size = new System.Drawing.Size(100, 34);
+            this.BtnSaveCreateResident.TabIndex = 27;
+            this.BtnSaveCreateResident.Text = "SALVAR";
+            this.BtnSaveCreateResident.UseVisualStyleBackColor = true;
+            this.BtnSaveCreateResident.Click += new System.EventHandler(this.BtnSaveCreateResident_Click);
+            // 
+            // CmbSexCreateResident
+            // 
+            this.CmbSexCreateResident.FormattingEnabled = true;
+            this.CmbSexCreateResident.Items.AddRange(new object[] {
+            "M",
+            "F"});
+            this.CmbSexCreateResident.Location = new System.Drawing.Point(746, 515);
+            this.CmbSexCreateResident.Name = "CmbSexCreateResident";
+            this.CmbSexCreateResident.Size = new System.Drawing.Size(61, 21);
+            this.CmbSexCreateResident.TabIndex = 28;
             // 
             // pgHome
             // 
@@ -1577,17 +2043,21 @@ namespace SCAC.Pages
             this.MnsMenu.ResumeLayout(false);
             this.MnsMenu.PerformLayout();
             this.Container.ResumeLayout(false);
+            this.PnlListStatus.ResumeLayout(false);
+            this.PnlListPriority.ResumeLayout(false);
+            this.PnlListOrgPub.ResumeLayout(false);
+            this.PnlListEvent.ResumeLayout(false);
+            this.PnlListLeader.ResumeLayout(false);
             this.PnlListResident.ResumeLayout(false);
             this.PnlLisRein.ResumeLayout(false);
             this.PnlCreateRein.ResumeLayout(false);
             this.PnlCreateRein.PerformLayout();
             this.PnlDateConclusionCreateRein.ResumeLayout(false);
             this.PnlDateConclusionCreateRein.PerformLayout();
-            this.PnlListLeader.ResumeLayout(false);
-            this.PnlListEvent.ResumeLayout(false);
-            this.PnlListOrgPub.ResumeLayout(false);
-            this.PnlListPriority.ResumeLayout(false);
-            this.PnlListStatus.ResumeLayout(false);
+            this.PnlCreateEvent.ResumeLayout(false);
+            this.PnlCreateEvent.PerformLayout();
+            this.PnlCreateResident.ResumeLayout(false);
+            this.PnlCreateResident.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1759,5 +2229,47 @@ namespace SCAC.Pages
         private System.Windows.Forms.ColumnHeader HourColumnListEvent;
         private System.Windows.Forms.ColumnHeader DescriptionColumnListEvent;
         private System.Windows.Forms.ColumnHeader StatusColumnListEvent;
+        private System.Windows.Forms.Panel PnlCreateEvent;
+        private System.Windows.Forms.MaskedTextBox TxbResponsableCreateEvent;
+        private System.Windows.Forms.Label LblStatusCreateEvent;
+        private System.Windows.Forms.Label LblDescriptionCreateEvent;
+        private System.Windows.Forms.Label LblHourCreateEvent;
+        private System.Windows.Forms.Label LblDateCreateEvent;
+        private System.Windows.Forms.Label LblResponsableCreateEvent;
+        private System.Windows.Forms.Label LblTittleCreateEvent;
+        private System.Windows.Forms.MonthCalendar CldDateCreateEvent;
+        private System.Windows.Forms.MaskedTextBox TxbHourCreateEvent;
+        private System.Windows.Forms.Button BtnSaveCreateEvent;
+        private System.Windows.Forms.ComboBox CmbStatusCreateEvent;
+        private System.Windows.Forms.MaskedTextBox TxbDescriptionCreateEvent;
+        private System.Windows.Forms.Panel PnlCreateResident;
+        private System.Windows.Forms.Button BtnSaveCreateResident;
+        private System.Windows.Forms.MaskedTextBox TxbComplementCreateResident;
+        private System.Windows.Forms.MaskedTextBox TxbUfCreateResident;
+        private System.Windows.Forms.MaskedTextBox TxbCityCreateResident;
+        private System.Windows.Forms.MaskedTextBox TxbNumberCreateResident;
+        private System.Windows.Forms.MaskedTextBox TxbCepCreateResident;
+        private System.Windows.Forms.MaskedTextBox TxbDistrictCreateResident;
+        private System.Windows.Forms.MaskedTextBox TxbAddressCreateResident;
+        private System.Windows.Forms.MaskedTextBox TxbTelephoneCreateResident;
+        private System.Windows.Forms.MonthCalendar CldBirthdayCreateResident;
+        private System.Windows.Forms.MaskedTextBox TxbCpfCreateResident;
+        private System.Windows.Forms.MaskedTextBox TxbRgCreateResident;
+        private System.Windows.Forms.MaskedTextBox TxbFullNameCreateResident;
+        private System.Windows.Forms.Label LblComplementCreateResident;
+        private System.Windows.Forms.Label LblCepCreateResident;
+        private System.Windows.Forms.Label LblUfCreateResident;
+        private System.Windows.Forms.Label LblCityCreateResident;
+        private System.Windows.Forms.Label LblNumberCreateResident;
+        private System.Windows.Forms.Label LblDistrictCreateResident;
+        private System.Windows.Forms.Label LblAddressCreateResident;
+        private System.Windows.Forms.Label LblSexCreateResident;
+        private System.Windows.Forms.Label LblTelephoneCreateResident;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label LblCpfCreateResident;
+        private System.Windows.Forms.Label LblFullNameCreateResident;
+        private System.Windows.Forms.Label LblRgCreateResident;
+        private System.Windows.Forms.Label LbltTitleCreateResident;
+        private System.Windows.Forms.ComboBox CmbSexCreateResident;
     }
 }

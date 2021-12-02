@@ -57,9 +57,11 @@ namespace SCAC.Pages
             PnlCreateRein.Visible = !PnlCreateRein.Visible;
             PnlLisRein.Visible = false;
             PnlListPriority.Visible = false;
+            PnlCreateResident.Visible = false;
             PnlLisRein.Visible = false;
             PnlListOrgPub.Visible = false;
             PnlListEvent.Visible = false;
+            PnlCreateEvent.Visible = false;
             PnlListResident.Visible = false;
         }
         private void TsmiListReinvindication_Click(object sender, EventArgs e)
@@ -77,6 +79,8 @@ namespace SCAC.Pages
             PnlCreateRein.Visible = false;
             PnlListResident.Visible = false;
             PnlListLeader.Visible = false;
+            PnlCreateResident.Visible = false;
+            PnlCreateEvent.Visible = false;
             PnlListEvent.Visible = false;
             PnlListOrgPub.Visible = false;
             PnlListPriority.Visible = false;
@@ -93,7 +97,9 @@ namespace SCAC.Pages
             PopularTblDadosMorador(LtvListResident);
 
             PnlCreateRein.Visible = false;
+            PnlCreateResident.Visible = false;
             PnlListLeader.Visible = false;
+            PnlCreateEvent.Visible = false;
             PnlListPriority.Visible = false;
             PnlListOrgPub.Visible = false;
             PnlListEvent.Visible = false;
@@ -113,7 +119,9 @@ namespace SCAC.Pages
             PnlCreateRein.Visible = false;
             PnlLisRein.Visible = false;
             PnlListPriority.Visible = false;
+            PnlCreateResident.Visible = false;
             PnlListResident.Visible = false;
+            PnlCreateEvent.Visible = false;
             PnlListOrgPub.Visible = false;
             PnlListEvent.Visible = false;
             PnlListLeader.Visible = !PnlListLeader.Visible;
@@ -132,6 +140,8 @@ namespace SCAC.Pages
             PnlLisRein.Visible = false;
             PnlListResident.Visible = false;
             PnlListPriority.Visible = false;
+            PnlCreateEvent.Visible = false;
+            PnlCreateResident.Visible = false;
             PnlListLeader.Visible = false;
             PnlListOrgPub.Visible = false;
             PnlListEvent.Visible = !PnlListEvent.Visible;
@@ -149,6 +159,8 @@ namespace SCAC.Pages
             PnlCreateRein.Visible = false;
             PnlLisRein.Visible = false;
             PnlListResident.Visible = false;
+            PnlCreateEvent.Visible = false;
+            PnlCreateResident.Visible = false;
             PnlListPriority.Visible = false;
             PnlListLeader.Visible = false;
             PnlListEvent.Visible = false;
@@ -168,6 +180,8 @@ namespace SCAC.Pages
             PnlLisRein.Visible = false;
             PnlListResident.Visible = false;
             PnlListLeader.Visible = false;
+            PnlCreateEvent.Visible = false;
+            PnlCreateResident.Visible = false;
             PnlListEvent.Visible = false;
             PnlListOrgPub.Visible = false;
             PnlListPriority.Visible = false;
@@ -190,9 +204,52 @@ namespace SCAC.Pages
             PnlListLeader.Visible = false;
             PnlListEvent.Visible = false;
             PnlListOrgPub.Visible = false;
+            PnlCreateResident.Visible = false;
+            PnlCreateEvent.Visible = false;
             PnlListStatus.Visible = false;
             PnlListPriority.Visible = !PnlListPriority.Visible;
         }
+        private void TsmiRegiEvent_Click(object sender, EventArgs e)
+        {
+            ChangeHeight(755);
+            PnlCreateEvent.Width = 1357;
+            PnlCreateEvent.Height = 735;
+            PnlCreateEvent.Location = new Point(0, 24);
+            CmbStatusCreateEvent.Items.Clear();
+
+            PopularTblDadadosStatus(CmbStatusCreateEvent);
+
+            PnlCreateRein.Visible = false;
+            PnlLisRein.Visible = false;
+            PnlListResident.Visible = false;
+            PnlListLeader.Visible = false;
+            PnlListEvent.Visible = false;
+            PnlListOrgPub.Visible = false;
+            PnlListStatus.Visible = false;
+            PnlListPriority.Visible = false;
+            PnlCreateResident.Visible = false;
+            PnlCreateEvent.Visible = !PnlCreateEvent.Visible;
+
+        }
+        private void TsmiRegiResident_Click(object sender, EventArgs e)
+        {
+            ChangeHeight(890);
+            PnlCreateResident.Width = 1357;
+            PnlCreateResident.Height = 890;
+            PnlCreateResident.Location = new Point(0, 24);
+
+            PnlCreateRein.Visible = false;
+            PnlLisRein.Visible = false;
+            PnlListResident.Visible = false;
+            PnlListLeader.Visible = false;
+            PnlListEvent.Visible = false;
+            PnlListOrgPub.Visible = false;
+            PnlListStatus.Visible = false;
+            PnlListPriority.Visible = false;
+            PnlCreateEvent.Visible = false;
+            PnlCreateResident.Visible = !PnlCreateResident.Visible;
+        }
+
 
 
 
@@ -221,10 +278,10 @@ namespace SCAC.Pages
                 if (request.IsSuccessStatusCode)
                 {
                     CreateMessageSuccess("Registro concluído com sucesso");
-                    ChangeHeight(1700);
+                    ChangeHeight(740);
                     PnlCreateRein.Width = 1357;
                     PnlCreateRein.Height = 200;
-                    this.PnlCreateRein.Visible = false;
+                    PnlCreateRein.Visible = false;
 
 
                 }
@@ -233,6 +290,72 @@ namespace SCAC.Pages
             }
         }
 
+        async private void BtnSaveCreateEvent_Click(object sender, EventArgs e)
+        {
+            Evento newEvent = new Evento()
+            {
+                nameResponsible = TxbResponsableCreateEvent.Text,
+                date = CldDateCreateEvent.SelectionStart.ToString("dd/MM/yyyy"),
+                hour = TxbHourCreateEvent.Text,
+                description = TxbDescriptionCreateEvent.Text,
+                idStatus = CmbStatusCreateEvent.SelectedIndex
+            };
+
+            var json = JsonConvert.SerializeObject(newEvent);
+
+            using (var cliente = new HttpClient())
+            {
+                cliente.BaseAddress = new Uri("https://api-scac.azurewebsites.net");
+                var content = new StringContent(json, Encoding.UTF8, "application/json");
+                var request = await cliente.PostAsync("/api/v1/event", content);
+                var response = await request.Content.ReadAsStringAsync();
+
+                if (request.IsSuccessStatusCode)
+                {
+                    CreateMessageSuccess("Registro concluído com sucesso");
+                    ChangeHeight(740);
+                    this.PnlCreateEvent.Visible = false;
+                }
+                cliente.Dispose();
+            }
+        }
+        async private void BtnSaveCreateResident_Click(object sender, EventArgs e)
+        {
+            Morador newMorador = new Morador()
+            {
+                fullName = TxbFullNameCreateResident.Text,
+                rg = TxbRgCreateResident.Text,
+                cpf = TxbCpfCreateResident.Text,
+                birthday = CldBirthdayCreateResident.SelectionStart.ToString("dd/MM/yyyy"),
+                telephone = TxbTelephoneCreateResident.Text,
+                sex = CmbSexCreateResident.SelectedItem.ToString(),
+                address = TxbAddressCreateResident.Text,
+                district = TxbDistrictCreateResident.Text,
+                number = TxbNumberCreateResident.Text,
+                city = TxbCityCreateResident.Text,
+                uf = TxbUfCreateResident.Text,
+                cep = TxbCepCreateResident.Text,
+                complement = TxbComplementCreateResident.Text
+            };
+
+            var json = JsonConvert.SerializeObject(newMorador);
+
+            using (var cliente = new HttpClient())
+            {
+                cliente.BaseAddress = new Uri("https://api-scac.azurewebsites.net");
+                var content = new StringContent(json, Encoding.UTF8, "application/json");
+                var request = await cliente.PostAsync("/api/v1/resident", content);
+                var response = await request.Content.ReadAsStringAsync();
+
+                if (request.IsSuccessStatusCode)
+                {
+                    CreateMessageSuccess("Registro concluído com sucesso");
+                    ChangeHeight(740);
+                    this.PnlCreateResident.Visible = false;
+                }
+                cliente.Dispose();
+            }
+        }
 
         //Métodos para deletar os itens
         async private void BtnDeleteRein_Click(object sender, EventArgs e)

@@ -13,7 +13,7 @@ namespace SCAC.Src.Classes
         public string cpf { get; set; }
         public string fullName { get; set; }
         public string birthday { get; set; }
-        public char sex { get; set; }
+        public string sex { get; set; }
         public string telephone { get; set; }
         public string address { get; set; }
         public string number { get; set; }
