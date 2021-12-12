@@ -298,7 +298,7 @@ namespace SCAC.Pages
                 date = CldDateCreateEvent.SelectionStart.ToString("dd/MM/yyyy"),
                 hour = TxbHourCreateEvent.Text,
                 description = TxbDescriptionCreateEvent.Text,
-                idStatus = CmbStatusCreateEvent.SelectedIndex
+                idStatus = CmbStatusCreateEvent.SelectedIndex+1
             };
 
             var json = JsonConvert.SerializeObject(newEvent);
